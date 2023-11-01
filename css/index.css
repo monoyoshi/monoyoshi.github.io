@@ -1,0 +1,25 @@
+.topbar {
+	background-color: rgb(185, 35, 30);
+}
+
+.navtabs #home {
+	left: 0;
+}
+
+/* typewriter */
+#caret {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 1px;
+	height: 36px;
+	background-color: white;
+	animation: blink 1.2s step-end infinite;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+
+/* - - - - - - - - - */

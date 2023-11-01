@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>404 | monoyoshi.github.io</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- scripts -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/footer.js"></script>
+    <script>
+        // insert footer
+        window.addEventListener("load", function () {
+            document.getElementsByTagName("footer")[0].innerHTML = footer(0);
+        });
+    </script>
+
+    <!-- topbar -->
+    <button class="topbar" onClick="topScroll()"></button>
+
+    <!-- sidebar navtabs -->
+    <div class="navtabs" class="sidenav">
+        <a href="/" id="home">home</a>
+        <a href="about" id="about">about me</a>
+        <a href="art" id="art">art</a>
+        <a href="projects" id="projects">projects</a>
+        <a href="contact" id="contact">contact</a>
+    </div>
+
+    <!-- light mode / dark mode toggle -->
+    <div class="flexbox column center" id="pullswitch">
+        <div class="string"></div>
+        <button id="lightdark-mode"></button>
+    </div>
+</head>
+
+<body>
+    <div class="flexbox"y>
+        <div class="textbox" style="width: 50%;">
+            <div class="h1">error 404: not found</div>
+            <div class="quote" style="margin: 15px;">
+                <span class="h3" style="font-weight: normal;">"...oh."</span>
+            </div>
+            <p>
+                hm. the page you're trying to go to doesn't exist. did you click a link to get here, or...<br>
+                well anyway, sorry about that! click on the tabs on the left to get back on track.
+            </p>
+        </div>
+        <img src="assets/404.png" alt="404" style="width: 50%;">
+    </div>
+</body>
+
+<footer>
+    [insert footer here]
+</footer>
+
+</html>

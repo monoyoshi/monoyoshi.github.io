@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>home | monoyoshi.github.io</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/typewriter.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- scripts -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/footer.js"></script>
+    <script>
+        // insert footer
+        window.addEventListener("load", function () {
+            document.getElementsByTagName("footer")[0].innerHTML = footer(0);
+        });
+    </script>
+
+    <script src="javascript/agecalc.js"></script>
+
+    <script src="javascript/index.js"></script>
+
+    <!-- topbar -->
+    <button class="topbar" onClick="topScroll()"></button>
+
+    <!-- sidebar navtabs -->
+    <div class="navtabs">
+        <a href="javascript:;" id="home"><span>home</span></a>
+        <a href="about" id="about">about me</a>
+        <a href="art" id="art">art</a>
+        <a href="projects" id="projects">projects</a>
+        <a href="contact" id="contact">contact</a>
+    </div>
+
+    <!-- light mode / dark mode toggle -->
+    <div class="flexbox column center" id="pullswitch">
+        <div class="string"></div>
+        <button id="lightdark-mode"></button>
+    </div>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="assets/logo.png" style="max-width: 80%; filter: drop-shadow(0 0 10px black)">
+    </div>
+
+    <br>
+
+    <div class="flexbox center">
+        <div class="gallery" style="width: 45%;">
+            <img src="assets/placeholder/drgl-5.png" alt="welcome" width="80%">
+        </div>
+        <div style="width: 55%;">
+            <div class="textbox">
+                <span class="h1" id="typed">[insert title here]</span><span id="caret"></span></span>
+                <p>
+                    yo! the name's <b>kyu(rem)</b>, and welcome to my funny and cool portfolio!!<br>
+                    if this page loads correctly, it should eventually say something similar up there :)<br>
+                    <span id="welcomefail">if it didn't, then uh, <a id="welcomefix" style="cursor: pointer;">click this</a>!</span>
+                </p>
+                <p>
+                    anyway, check it out! cool, right?<br>
+                    one day I thought I should probably have something like a portfolio, just 'cuz I think it would be
+                    neat to see all the stuff I've done in one place. days of hyperfixation later, and here you go!
+                </p>
+                <p>
+                    I usually keep a lot of my uhhh...hyperfixation projects...to myself, but you know what? I think
+                    they deserve to be at least somewhat available to the internet. it makes me look cool, after all!
+                </p>
+                <span>so! here y'all go! enjoy!</span>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="flexbox column">
+        <span class="h1" style="padding-left: 15px;"><b>who am I?</b></span>
+        <div class="flexbox">
+            <div style="width: 65%;">
+                <div class="textbox">
+                    <div class="note" style="padding-top: 0; padding-bottom: 0">
+                        See also: <a href="about">about me</a>
+                    </div>
+                    <p>
+                        I am who you might know as <b>kyu(rem)</b>, and I'm just your average dragon that does a lot of
+                        funny things. I am <i>quite literally</i> like the pokémon. but cooler. and more
+                        human-shaped.<br>
+                        anyway, what kinda funny things, you might ask? well.
+                    </p>
+                    <p>
+                        see this website here? I made it <b>all</b> (ok well, other than some of the pictures. though,
+                        the day <i>will</i> eventually come when I will replace most if not all these placeholder images
+                        with specialized art). like what you see? be sure to check out the
+                        <a href="projects">projects</a> page for more cool stuff! I mean, once I get to it.
+                    </p>
+                    <p>
+                        yeah. so anyway, I like to play games, make art, and program. at any given time, I guess I could
+                        be found doing any of those. I also just like roaming around the internet.
+                    </p>
+                        have I told you that I like swords?
+                </div>
+                <div class="gallery">
+                    <img src="assets/kyurem/kyurem.png" alt="kyurem" width="100%">
+                    <img src="assets/kyurem/kyurem-black.png" alt="kyurem-black" width="100%">
+                    <img src="assets/kyurem/kyurem-white.png" alt="kyurem-white" width="100%">
+                </div>
+            </div>
+            <div style="width: 35%; margin: 0;">
+                <div class="gallery">
+                    <img src="assets/placeholder/zodiloaf.png" style="max-width: 80%;">
+                </div>
+                <table style="margin: 15px;">
+                <tr>
+                    <th>Name</th>
+                    <td><span class="tooltip">Kyurem Dragali<span>キュレム・ドラガリ</span></span><br></td>
+                </tr>
+                <tr><th colspan="2"><hr></th></tr>
+                <tr>
+                    <th>Pronouns</th>
+                    <td>
+                        They/them<br>
+                        He/him<br>
+                        It/its
+                    </td>
+                </tr>
+                <tr>
+                    <th>Birthday</th>
+                    <td>July 30, 2000 (Leo; age <span id="age">????</span>)</td>
+                </tr>
+                <tr><th colspan="2"><hr></th></tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>
+                        Gaming<br>
+                        Drawing<br>
+                        Programming<br>
+                        Memeing</td>
+                </tr>
+                <tr>
+                    <th>Special skills</th>
+                    <td>Being a funny, silly, goofy guy</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    [insert footer here]
+</footer>
+
+</html>
