@@ -28,10 +28,10 @@
     <script src="javascript/about.js"></script>
 
     <!-- topbar -->
-    <button class="topbar" onClick="topScroll()"></button>
+    <button onClick="topScroll()" class="topbar"></button>
 
-    <!-- sidebar navtabs -->
-    <div class="navtabs" class="sidenav">
+    <!-- sidebar navtab -->
+    <div class="navtab">
         <a href="/" id="home">home</a>
         <a href="javascript:;" id="about">about me</a>
         <a href="art" id="art">art</a>
@@ -42,14 +42,14 @@
     <!-- light mode / dark mode toggle -->
     <div class="flexbox column center" id="pullswitch">
         <div class="string"></div>
-        <button id="lightdark-mode"></button>
+        <button class="lightdark-mode"></button>
     </div>
 </head>
 
 <body>
     <div class="flexbox">
-        <div class="gallery" style="width: 40%;">
-            <img src="assets/placeholder/junkun.png" alt="self-portrait" style="max-width: 80%;">
+        <div class="flexbox center" style="width: 40%;">
+            <img src="assets/placeholder/junkun.png" alt="self-portrait" style="margin: 15px auto;">
         </div>
         <div class="flexbox center" style="width: 60%;">
             <div class="flexbox column" style="width: 65%;">
@@ -61,20 +61,21 @@
                     </div>
                     <p>
                         A dragon who lives in what they affectionately call "the void," but is apparently just somewhere
-                        in the United States. They are passionate in their interests, which include swords, dragons,
-                        other monsters, dogs and other cute animals, and memes. On their free time, they are usually
-                        found playing games, drawing, "hacking" (programming), vibing to music, or being funny.
+                        in the United States. They are passionate in their interests, which include swords, dragons, and
+                        computers. On their free time, they are usually found playing games, drawing, "hacking"
+                        (programming), vibing to music, or being funny.
                     </p>
                     <div class="h1">Profile</div>
                 </div>
-                <table class="transparent" style="width: 100%;">
+                <table class="transparent" style="margin: auto 15px;">
                     <tr>
                         <th>Aliases</th>
                         <td>
+                            kyu(rem)<br>
                             Kyu<br>
+                            <span class="tooltip">Q<span class="ttpopup">Pronounced "kyu"</span></span><br>
+                            <span class="tooltip">9<span class="ttpopup">Pronounced "kyu"</span></span><br>
                             <a href="wikyu/ren">Ren</a><br>
-                            <span class="tooltip">Q<span>Pronounced "kyu"</span></span><br>
-                            <span class="tooltip">9<span>Pronounced "kyu"</span></span><br>
                             Marth<br>
                             KyuremTrainer<br>
                             Pika(hardt)<br>
@@ -82,7 +83,7 @@
                             Senpai
                         </td>
                     </tr>
-                    <tr><th colspan="2"><hr></th></tr>
+                    <tr><td><br></td></tr>
                     <tr>
                         <th>Species</th>
                         <td>Dragon(?)</td>
@@ -105,22 +106,20 @@
                     </tr>
                     <tr>
                         <th>Timezone</th>
-                        <td>
-                            Central Time (UTC-5/UTC-6)<br>
-                            <span id="currenttime">????/??/?? ??:??:?? UTC??</span>
-                        </td>
+                        <td><span class="tooltip">Central Time (UTC-5/UTC-6)<span class="ttpopup" id="currenttime">Current time: ????/??/?? ??:??:?? UTC??</span></span></td>
                     </tr>
                     <tr>
                         <th>Nationality</th>
                         <td>Filipino</td>
                     </tr>
-                    <tr><th colspan="2"><hr></th></tr>
+                    <tr><td><br></td></tr>
                     <tr>
                         <th>Likes</th>
                         <td>
                             Swords<br>
                             Dragons (cool stuff)<br>
-                            Dogs (cute stuff)
+                            Dogs (cute stuff)<br>
+                            Computers
                         </td>
                     </tr>
                     <tr>
@@ -137,8 +136,7 @@
                         <td>
                             Pasta<br>
                             Bread<br>
-                            <span class="tooltip">Fruit<span>Favorite fruit: dragonfruit, blueberries,
-                                    strawberries</span></span>
+                            <span class="tooltip">Fruit<span class="ttpopup">Favorite fruit: dragonfruit, blueberries, strawberries</span></span>
                         </td>
                     </tr>
                     <tr>
@@ -152,7 +150,10 @@
                     </tr>
                     <tr>
                         <th>Special skills</th>
-                        <td>Being a funny, silly, goofy guy</td>
+                        <td>
+                            Being a funny, silly, goofy guy<br>
+                            Hyperfixation
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -165,8 +166,8 @@
     <div class="flexbox">
         <div class="textbox" style="width: 50%;">
             <div class="note" style="padding-top: 0; padding-bottom: 0">
-                See also: <a href="interests">An almost comprehensive list of my interests</a> and <a href="kyulist">the
-                    List</a>
+                See also: <a href="interests">An almost comprehensive list of my interests</a> and
+                <a href="kyulist">the List</a>
             </div>
             <p>
                 As you can see, I like a lot of random stuff. Listed below are my current main hyperfixations.
@@ -182,8 +183,8 @@
                 <li><b>Pokémon</b></li>
             </ul>
         </div>
-        <div class="flexbox center" style="width: 50%;  padding: 15px;">
-            <img src="assets/placeholder/miku.png" alt="mikyu" style="max-width: 80%;">
+        <div class="flexbox center" style="width: 50%;">
+            <img src="assets/placeholder/miku.png" alt="mikyu">
         </div>
     </div>
 
@@ -196,14 +197,20 @@
                 See also: <a href="projects">projects</a>
             </div>
             <p>
+                These bars are based off on how I feel about a given subject. A bar that is more filled means that I'm
+                pretty confident when it comes to working with it. I most likely don't know <i>everything</i>, but the
+                <a href="projects">projects</a> page should provide some more solid proof that I am a pretty fast
+                learner (I'm also great at self-studying and searching things up, hehe)!
+            </p>
+            <p>
                 <div class="h2">Programs, Services, and Suites</div>
             </p>
             <div class="h3">Google Workspace</div>
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Drive</th>
-                        <td>
+                        <th style="width: 50%">Drive</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 100%"></div>
                             </div>
@@ -218,18 +225,18 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Calendar</th>
+                        <th>Meet</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 100%"></div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <th>Meet</th>
+                        <th>Calendar</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 100%"></div>
                             </div>
                         </td>
                     </tr>
@@ -237,15 +244,15 @@
                         <th>Jamboard</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 100%"></div>
                             </div>
                         </td>
                     </tr>
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Docs</th>
-                        <td>
+                        <th style="width: 50%">Docs</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 100%"></div>
                             </div>
@@ -271,7 +278,7 @@
                         <th>Forms</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 100%"></div>
                             </div>
                         </td>
                     </tr>
@@ -279,7 +286,7 @@
                         <th>Sites</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 100%"></div>
                             </div>
                         </td>
                     </tr>
@@ -292,8 +299,8 @@
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>OneDrive</th>
-                        <td>
+                        <th style="width: 50%">OneDrive</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 100%"></div>
                             </div>
@@ -334,8 +341,8 @@
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Word</th>
-                        <td>
+                        <th style="width: 50%">Word</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -380,7 +387,7 @@
 
             <div class="h3">
                 <span class="tooltip">Adobe Creative Cloud
-                    <span>
+                    <span class="ttpopup">
                         Because I have no access to any of the programs listed below, I am extremely rusty at the
                         moment. Trust me though, I have made banger content!
                     </span>
@@ -389,8 +396,8 @@
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Illustrator</th>
-                        <td>
+                        <th style="width: 50%">Illustrator</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -407,8 +414,8 @@
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>InDesign</th>
-                        <td>
+                        <th style="width: 50%">InDesign</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 70%"></div>
                             </div>
@@ -431,8 +438,8 @@
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Git</th>
-                        <td>
+                        <th style="width: 50%">Git</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -473,8 +480,8 @@
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>GitHub</th>
-                        <td>
+                        <th style="width: 50%">GitHub</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -524,8 +531,8 @@
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th><span class="tooltip">JavaScript<span>Familiar with Node.js.</span></span></th>
-                        <td>
+                        <th style="width: 50%"><span class="tooltip">JavaScript<span class="ttpopup">Familiar with Node.js.</span></span></th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -556,7 +563,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">SQL<span>Familiar with SQLite.</span></span></th>
+                        <th><span class="tooltip">SQL<span class="ttpopup">Familiar with SQLite.</span></span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 80%"></div>
@@ -564,7 +571,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">Java<span>Learned for one semester in college.</span></span></th>
+                        <th><span class="tooltip">Java<span class="ttpopup">Learned for one semester in college.</span></span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 60%"></div>
@@ -572,7 +579,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">C<span>Learned for one semester in college.</span></span></th>
+                        <th><span class="tooltip">C<span class="ttpopup">Learned for one semester in college.</span></span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 40%"></div>
@@ -580,7 +587,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">PHP<span>Learned for one semester in high school.</span></span></th>
+                        <th><span class="tooltip">PHP<span class="ttpopup">Learned for one semester in high school.</span></span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 10%"></div>
@@ -590,8 +597,8 @@
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Scratch</th>
-                        <td>
+                        <th style="width: 50%">Scratch</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -606,8 +613,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">x86-64 Assembly<span>Learned for one semester in
-                                    college.</span></span></th>
+                        <th>
+                            <span class="tooltip">x86-64 Assembly<span class="ttpopup">Learned for one semester in college.</span></span>
+                        </th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 30%"></div>
@@ -623,14 +631,14 @@
             <div class="h2">Spoken Languages</div>
             </p>
             <div class="h3">
-                <span class="tooltip">English<span>"English is not my first language, because I do not speak in the
+                <span class="tooltip">English<span class="ttpopup">"English is not my first language, because I do not speak in the
                         first place."<br>(actually my first language)</span></span>
             </div>
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Reading</th>
-                        <td>
+                        <th style="width: 50%">Reading</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 100%"></div>
                             </div>
@@ -647,8 +655,8 @@
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Listening</th>
-                        <td>
+                        <th style="width: 50%">Listening</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 100%"></div>
                             </div>
@@ -668,14 +676,14 @@
             <br>
 
             <div class="h3">
-                <span class="tooltip">Filipino<span>I can read and understand just fine, but something happened and
+                <span class="tooltip">Filipino<span class="ttpopup">I can read and understand just fine, but something happened and
                         I grew up being unable to write and speak without <i>lots</i> of help.</span></span>
             </div>
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Reading</th>
-                        <td>
+                        <th style="width: 50%">Reading</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 80%"></div>
                             </div>
@@ -685,15 +693,15 @@
                         <th>Writing</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 20%"></div>
+                                <div class="indicator" style="width: 30%"></div>
                             </div>
                         </td>
                     </tr>
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Listening</th>
-                        <td>
+                        <th style="width: 50%">Listening</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 90%"></div>
                             </div>
@@ -713,16 +721,15 @@
             <br>
 
             <div class="h3">
-                <span class="tooltip">Japanese<span>Studied throughout high school and college.<br>
-                        I mean, my major is literally Japanese.</span></span>
+                <span class="tooltip">Japanese<span class="ttpopup">Studied throughout high school and college.</span></span>
             </div>
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Reading</th>
-                        <td>
+                        <th style="width: 50%">Reading</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
+                                <div class="indicator" style="width: 90%"></div>
                             </div>
                         </td>
                     </tr>
@@ -730,17 +737,17 @@
                         <th>Writing</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
+                                <div class="indicator" style="width: 80%"></div>
                             </div>
                         </td>
                     </tr>
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Listening</th>
-                        <td>
+                        <th style="width: 50%">Listening</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
+                                <div class="indicator" style="width: 80%"></div>
                             </div>
                         </td>
                     </tr>
@@ -748,7 +755,7 @@
                         <th>Speaking</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 60%"></div>
+                                <div class="indicator" style="width: 70%"></div>
                             </div>
                         </td>
                     </tr>
@@ -758,17 +765,17 @@
             <br>
 
             <div class="h3">
-                <span class="tooltip">Swedish<span>Attributed to like, ~3 years of hyperfixation on Duolingo.<br>
+                <span class="tooltip">Swedish<span class="ttpopup">Attributed to like, ~3 years of hyperfixation on Duolingo.<br>
                         Most of the knowledge is gone now, but there are times the Swedish sleeper agent in me wakes
                         up...</span></span>
             </div>
             <div class="flexbox">
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Reading</th>
-                        <td>
+                        <th style="width: 50%">Reading</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
-                                <div class="indicator" style="width: 60%"></div>
+                                <div class="indicator" style="width: 40%"></div>
                             </div>
                         </td>
                     </tr>
@@ -776,15 +783,15 @@
                         <th>Writing</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 50%"></div>
+                                <div class="indicator" style="width: 20%"></div>
                             </div>
                         </td>
                     </tr>
                 </table>
                 <table class="transparent" style="width: 100%;">
                     <tr>
-                        <th>Listening</th>
-                        <td>
+                        <th style="width: 50%">Listening</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 20%"></div>
                             </div>

@@ -1,5 +1,4 @@
-/* debugging
-div {
+/*div {
     outline: 1px solid #ff00ff;
 }
 
@@ -15,7 +14,7 @@ td {
 
 html {
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 100%;
+    font-size: 16px;
     color: white;
     background-color: rgb(30, 35, 40);
     overflow: auto;
@@ -40,11 +39,16 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: inherit;
+    font-size: 16px;
+}
+
 a:hover:active {
     color: rgb(255, 160, 50);
 }
 
-a img:hover {
+a#social img:hover {
     filter: brightness(200%);
     transition: 0.3s;
 }
@@ -54,13 +58,19 @@ mark {
     color: white;
 }
 
-img:not(a img) {
+img:not(.gallery img, a#social img) {
+    max-width: 80%;
+    margin: 15px auto;
+}
+
+img:not(a#social img) {
     pointer-events: none;
 }
 
+/* progress bar */
 .progressbar {
     height: 10px;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
     background-color: white;
 }
@@ -71,6 +81,14 @@ img:not(a img) {
     background-color: rgb(0, 120, 215);
 }
 
+.progressbar:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+}
+
+/* - - - - - - - - - */
+
+/* tables */
 table {
     max-width: 100%;
     background-color: rgb(45, 50, 55);
@@ -86,27 +104,19 @@ td {
     padding: 0 5px;
 }
 
-th {
-    min-width: 30%;
-    max-width: 50%;
-}
-
-td {
-    min-width: 50%;
-    max-width: 70%;
-}
-
 table.transparent {
     background-color: transparent;
-    padding: 0 15px;
+    padding: 0;
     border-radius: 0;
     box-shadow: none;
 }
 
 table.transparent th,
 table.transparent td {
-    padding: 0;
+    padding: 0 15px 0 0;
 }
+
+/* - - - - - - - - - */
 
 /* custom headers */
 .h1 {
@@ -126,25 +136,11 @@ table.transparent td {
 
 /* - - - - - - - - - */
 
-/* image gallery */
-.gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0px 15px 15px;
-}
-
-.gallery > * {
-    margin-right: 15px;
-}
-
-/* - - - - - - - - - */
-
+/* indented text (notes, quotes, etc.) */
 .textbox {
     padding: 15px;
 }
 
-/* indented text (notes, quotes, etc.) */
 .note {
     padding: 5px 15px 5px 15px;
 }
@@ -159,23 +155,32 @@ table.transparent td {
 
 /* - - - - - - - - - */
 
-.imagecolor {
+/* audioblocks */
+.audioblock {
     display: inline-block;
-    height: 1em;
-    width: 3em;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    background-color: rgb(45, 50, 55);
+    border-width: 0px;
+    color: white;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 5px;
+    margin: 0.5em;
 }
+.audioblock:hover:active {
+    background-color: rgb(160, 210, 230);
+}
+
+/* - - - - - - - - - */
 
 /* popup on hover */
 .tooltip {
     position: relative;
     display: inline-block;
-    text-decoration: underline dotted rgb(200, 200, 200);
+    text-decoration: underline dotted white;
 
 }
 
-.tooltip span {
+.tooltip .ttpopup {
     visibility: hidden;
     opacity: 0;
     width: max-content;
@@ -189,6 +194,7 @@ table.transparent td {
     border-radius: 10px;
     text-align: center;
     font-weight: normal;
+    font-size: 16px;
     padding: 10px 15px 10px 15px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     transform: translate(-50%, -75%);
@@ -196,12 +202,12 @@ table.transparent td {
     z-index: 1;
 }
 
-.tooltip:hover span {
+.tooltip:hover .ttpopup {
     visibility: visible;
     opacity: 1;
 }
 
-.tooltip span::after {
+.tooltip .ttpopup::after {
     content: " ";
     position: absolute;
     top: 100%;
@@ -230,7 +236,25 @@ table.transparent td {
     justify-content: center;
 }
 
-/* - - - - - - - - */
+.flexbox.center.horizontal {
+    justify-content: flex-start;
+}
+
+/* image gallery (multiple images; single images use .flexbox.center */
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 15px 15px;
+}
+
+.gallery > * {
+    margin-right: 15px;
+}
+
+/* - - - - - - - - - */
+
+/* - - - - - - - - - */
 
 /* navigation scroll-to-top bar + tabs */
 .topbar {
@@ -251,7 +275,7 @@ table.transparent td {
     transition: 0.3s;
 }
 
-.navtabs a {
+.navtab a {
     position: fixed;
     left: -90px;
     transition: 0.3s;
@@ -262,38 +286,39 @@ table.transparent td {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-.navtabs a:hover {
+.navtab a:hover {
     left: 0;
     transition: 0.3s;
 }
 
-.navtabs a:hover:active {
+.navtab a:hover:active {
     color: white;
     filter: brightness(150%);
+    transition: 0.3s;
     translate: 0 5px;
 }
 
-.navtabs #home {
+.navtab #home {
     top: 50px;
     background-color: rgb(185, 35, 30);
 }
 
-.navtabs #about {
+.navtab #about {
     top: 105px;
     background-color: rgb(55, 115, 185);
 }
 
-.navtabs #art {
+.navtab #art {
     top: 160px;
     background-color: rgb(5, 155, 135);
 }
 
-.navtabs #projects {
+.navtab #projects {
     top: 215px;
     background-color: rgb(235, 210, 75);
 }
 
-.navtabs #contact {
+.navtab #contact {
     top: 270px;
     background-color: rgb(140, 145, 155);
 }
@@ -316,7 +341,7 @@ table.transparent td {
     width: 100px;
 }
 
-#lightdark-mode {
+.lightdark-mode {
     height: 50px;
     width: 50px;
     top: 150px;
@@ -331,7 +356,7 @@ table.transparent td {
     cursor: pointer;
 }
 
-#lightdark-mode:active {
+.lightdark-mode:active {
     top: 160px;
 }
 
@@ -355,6 +380,34 @@ a.collapsible:hover:active {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+/* - - - - - - - - - */
+
+/* navigation buttons */
+.navbutton {
+    background-color: rgb(45, 50, 55);
+    border: 1px solid rgb(160, 210, 230);
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbutton:hover {
+    background-color: rgba(160, 210, 230, 0.4);
+    transition: 0.3s;
+}
+
+.navbutton#active {
+    background-color: rgb(160, 210, 230);
+    transition: 0.3s;
+}
+
+.navbutton:hover:active {
+    background-color: rgb(160, 210, 230);
+    color: white;
 }
 
 /* - - - - - - - - - */

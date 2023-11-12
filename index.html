@@ -28,10 +28,10 @@
     <script src="javascript/index.js"></script>
 
     <!-- topbar -->
-    <button class="topbar" onClick="topScroll()"></button>
+    <button onClick="topScroll()" class="topbar"></button>
 
-    <!-- sidebar navtabs -->
-    <div class="navtabs">
+    <!-- sidebar navtab -->
+    <div class="navtab">
         <a href="javascript:;" id="home"><span>home</span></a>
         <a href="about" id="about">about me</a>
         <a href="art" id="art">art</a>
@@ -42,20 +42,20 @@
     <!-- light mode / dark mode toggle -->
     <div class="flexbox column center" id="pullswitch">
         <div class="string"></div>
-        <button id="lightdark-mode"></button>
+        <button class="lightdark-mode"></button>
     </div>
 </head>
 
 <body>
-    <div class="gallery">
-        <img src="assets/logo.png" style="max-width: 80%; filter: drop-shadow(0 0 10px black)">
+    <div class="flexbox center">
+        <img src="assets/logo.png" style="margin: 15px auto; filter: drop-shadow(0 0 10px black)">
     </div>
 
     <br>
 
     <div class="flexbox center">
-        <div class="gallery" style="width: 45%;">
-            <img src="assets/placeholder/drgl-5.png" alt="welcome" width="80%">
+        <div class="flexbox center" style="width: 45%;">
+            <img src="assets/placeholder/drgl-5.png" alt="welcome" style="margin: 15px auto;">
         </div>
         <div style="width: 55%;">
             <div class="textbox">
@@ -84,7 +84,7 @@
     <div class="flexbox column">
         <span class="h1" style="padding-left: 15px;"><b>who am I?</b></span>
         <div class="flexbox">
-            <div style="width: 65%;">
+            <div style="width: 60%;">
                 <div class="textbox">
                     <div class="note" style="padding-top: 0; padding-bottom: 0">
                         See also: <a href="about">about me</a>
@@ -103,51 +103,52 @@
                     </p>
                     <p>
                         yeah. so anyway, I like to play games, make art, and program. at any given time, I guess I could
-                        be found doing any of those. I also just like roaming around the internet.
+                        be found doing any of those. I also just like roaming around the internet. you'e probably seen
+                        me around.
                     </p>
-                        have I told you that I like swords?
+                        also, have I told you that I like swords?
                 </div>
                 <div class="gallery">
-                    <img src="assets/kyurem/kyurem.png" alt="kyurem" width="100%">
-                    <img src="assets/kyurem/kyurem-black.png" alt="kyurem-black" width="100%">
-                    <img src="assets/kyurem/kyurem-white.png" alt="kyurem-white" width="100%">
+                    <img src="assets/kyurem/kyurem.png" alt="kyurem" width="30%">
+                    <img src="assets/kyurem/kyurem-black.png" alt="kyurem-black" width="30%">
+                    <img src="assets/kyurem/kyurem-white.png" alt="kyurem-white" width="30%">
                 </div>
             </div>
-            <div style="width: 35%; margin: 0;">
-                <div class="gallery">
-                    <img src="assets/placeholder/zodiloaf.png" style="max-width: 80%;">
+            <div style="width: 40%; margin: 0;">
+                <div class="flexbox center">
+                    <img src="assets/placeholder/zodiloaf.png">
                 </div>
-                <table style="margin: 15px;">
-                <tr>
-                    <th>Name</th>
-                    <td><span class="tooltip">Kyurem Dragali<span>キュレム・ドラガリ</span></span><br></td>
-                </tr>
-                <tr><th colspan="2"><hr></th></tr>
-                <tr>
-                    <th>Pronouns</th>
-                    <td>
-                        They/them<br>
-                        He/him<br>
-                        It/its
-                    </td>
-                </tr>
-                <tr>
-                    <th>Birthday</th>
-                    <td>July 30, 2000 (Leo; age <span id="age">????</span>)</td>
-                </tr>
-                <tr><th colspan="2"><hr></th></tr>
-                <tr>
-                    <th>Hobbies</th>
-                    <td>
-                        Gaming<br>
-                        Drawing<br>
-                        Programming<br>
-                        Memeing</td>
-                </tr>
-                <tr>
-                    <th>Special skills</th>
-                    <td>Being a funny, silly, goofy guy</td>
-                </tr>
+                <table style="margin: 15px auto;">
+                    <tr>
+                        <th>Name</th>
+                        <td><span class="tooltip">Kyurem Dragali<span class="ttpopup">キュレム・ドラガリ</span></span><br></td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr>
+                        <th>Pronouns</th>
+                        <td>
+                            They/them<br>
+                            He/him<br>
+                            It/its
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Birthday</th>
+                        <td>July 30, 2000 (Leo; age <span id="age">????</span>)</td>
+                    </tr>
+                    <tr><td><br></td></tr>
+                    <tr>
+                        <th>Hobbies</th>
+                        <td>
+                            Gaming<br>
+                            Drawing<br>
+                            Programming<br>
+                            Memeing</td>
+                    </tr>
+                    <tr>
+                        <th>Special skills</th>
+                        <td>Being a funny, silly, goofy guy</td>
+                    </tr>
                 </table>
             </div>
         </div>
