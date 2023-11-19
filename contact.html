@@ -10,43 +10,28 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="css/contact.css">
-
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="javascript/main.js"></script>
-    <script src="javascript/footer.js"></script>
+    <script src="javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(0);
+        // insert header and footer
+        $(document).ready(function () {
+            $("header").html(header(0, "contact"));
+            $("footer").html(footer(0));
         });
     </script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="/" id="home">home</a>
-        <a href="about" id="about">about me</a>
-        <a href="art" id="art">art</a>
-        <a href="projects" id="projects">projects</a>
-        <a href="javascript:;" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    work-in-progress.png
-</body>
+    <header></header>
 
-<footer>
-    [insert footer here]
-</footer>
+    <article>
+        [insert article here]
+    </article>
+
+    <footer></footer>
+</body>
 
 </html>

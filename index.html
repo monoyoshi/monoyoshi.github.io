@@ -14,99 +14,77 @@
     <link rel="stylesheet" href="css/index.css">
 
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- 
+        as I've seen, jquery makes a lot more things streamlined, so I might as well...
+        besides, you can see my javascript skills elsewhere :)
+    -->
+
     <script src="javascript/main.js"></script>
-    <script src="javascript/footer.js"></script>
+    <script src="javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(0);
+        // insert header and footer
+        $(document).ready(function () {
+            $("header").html(header(0));
+            $("footer").html(footer(0));
         });
     </script>
 
     <script src="javascript/agecalc.js"></script>
 
     <script src="javascript/index.js"></script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="javascript:;" id="home"><span>home</span></a>
-        <a href="about" id="about">about me</a>
-        <a href="art" id="art">art</a>
-        <a href="projects" id="projects">projects</a>
-        <a href="contact" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    <div class="flexbox center">
-        <img src="assets/logo.png" style="margin: 15px auto; filter: drop-shadow(0 0 10px black)">
-    </div>
+    <header></header>
 
-    <br>
-
-    <div class="flexbox center">
-        <div class="flexbox center" style="width: 45%;">
-            <img src="assets/placeholder/drgl-5.png" alt="welcome" style="margin: 15px auto;">
-        </div>
-        <div style="width: 55%;">
-            <div class="textbox">
+    <article>
+        <div class="flexbox center">
+            <div class="frame" style="width: 45%;">
+                <img src="assets/placeholder/drgl-5.png" alt="welcome">
+            </div>
+            <div class="textbox" style="width: 55%;">
                 <span class="h1" id="typed">[insert title here]</span><span id="caret"></span></span>
                 <p>
                     yo! the name's <b>kyu(rem)</b>, and welcome to my funny and cool portfolio!!<br>
-                    if this page loads correctly, it should eventually say something similar up there :)<br>
-                    <span id="welcomefail">if it didn't, then uh, <a id="welcomefix" style="cursor: pointer;">click this</a>!</span>
+                    if this page loads correctly, it should eventually say the same thing up there :)<br>
+                    <span id="welcomefail">if it's not looking too good, then uh,
+                        <a id="welcomefix" style="cursor: pointer;">click this</a>!</span>
                 </p>
                 <p>
                     anyway, check it out! cool, right?<br>
-                    one day I thought I should probably have something like a portfolio, just 'cuz I think it would be
-                    neat to see all the stuff I've done in one place. days of hyperfixation later, and here you go!
+                    one day I thought I should probably have something like a portfolio, just 'cuz I think it would
+                    be neat to see all the stuff I've done in one place. I usually keep a lot of my uhhh...hyperfixation
+                    projects...to myself, but you know what? I think they deserve to be at least somewhat available to
+                    you all.
                 </p>
-                <p>
-                    I usually keep a lot of my uhhh...hyperfixation projects...to myself, but you know what? I think
-                    they deserve to be at least somewhat available to the internet. it makes me look cool, after all!
-                </p>
-                <span>so! here y'all go! enjoy!</span>
+                <p>so! here y'all go! enjoy!</p>
             </div>
         </div>
-    </div>
 
-    <br>
+        <br>
 
-    <div class="flexbox column">
-        <span class="h1" style="padding-left: 15px;"><b>who am I?</b></span>
-        <div class="flexbox">
+        <div class="flexbox center">
             <div style="width: 60%;">
                 <div class="textbox">
-                    <div class="note" style="padding-top: 0; padding-bottom: 0">
-                        See also: <a href="about">about me</a>
-                    </div>
+                    <div class="h1"><b>who am I?</b></div>
                     <p>
-                        I am who you might know as <b>kyu(rem)</b>, and I'm just your average dragon that does a lot of
-                        funny things. I am <i>quite literally</i> like the pokémon. but cooler. and more
-                        human-shaped.<br>
+                        I am who you might know as <b>kyu(rem)</b>, and I'm just your friendly neighborhood dragon that
+                        does a lot of funny things. I am <i>quite literally</i> like the pokémon. but cooler. maybe.<br>
                         anyway, what kinda funny things, you might ask? well.
                     </p>
                     <p>
                         see this website here? I made it <b>all</b> (ok well, other than some of the pictures. though,
                         the day <i>will</i> eventually come when I will replace most if not all these placeholder images
-                        with specialized art). like what you see? be sure to check out the
-                        <a href="projects">projects</a> page for more cool stuff! I mean, once I get to it.
+                        with my own. probably). cool, right?
                     </p>
                     <p>
-                        yeah. so anyway, I like to play games, make art, and program. at any given time, I guess I could
-                        be found doing any of those. I also just like roaming around the internet. you'e probably seen
-                        me around.
+                        yeah. so anyway, I like to play games, make art, and program. I lose it over dragons, cute
+                        stuff, and a certain type of anime guy. I also just like roaming around the internet. you've
+                        probably seen me around. I don't really talk much, but I love the things I love, and everything
+                        I do is centered around them.
                     </p>
-                        also, have I told you that I like swords?
+                    <p>wait, have I told you that I like swords?</p>
                 </div>
                 <div class="gallery">
                     <img src="assets/kyurem/kyurem.png" alt="kyurem" width="30%">
@@ -114,36 +92,29 @@
                     <img src="assets/kyurem/kyurem-white.png" alt="kyurem-white" width="30%">
                 </div>
             </div>
-            <div style="width: 40%; margin: 0;">
-                <div class="flexbox center">
+            <div style="width: 40%;">
+                <div class="frame">
                     <img src="assets/placeholder/zodiloaf.png">
                 </div>
                 <table style="margin: 15px auto;">
                     <tr>
                         <th>Name</th>
-                        <td><span class="tooltip">Kyurem Dragali<span class="ttpopup">キュレム・ドラガリ</span></span><br></td>
+                        <td>kyu(rem)</td>
                     </tr>
-                    <tr><td><br></td></tr>
                     <tr>
                         <th>Pronouns</th>
                         <td>
-                            They/them<br>
-                            He/him<br>
-                            It/its
+                            <span class="tooltip">they/him<span class="ttpopup">Like, "they slash him"</span></span>
                         </td>
                     </tr>
                     <tr>
                         <th>Birthday</th>
-                        <td>July 30, 2000 (Leo; age <span id="age">????</span>)</td>
+                        <td>July 30</td>
                     </tr>
                     <tr><td><br></td></tr>
                     <tr>
                         <th>Hobbies</th>
-                        <td>
-                            Gaming<br>
-                            Drawing<br>
-                            Programming<br>
-                            Memeing</td>
+                        <td>Vibing</td>
                     </tr>
                     <tr>
                         <th>Special skills</th>
@@ -152,11 +123,9 @@
                 </table>
             </div>
         </div>
-    </div>
-</body>
+    </article>
 
-<footer>
-    [insert footer here]
-</footer>
+    <footer></footer>
+</body>
 
 </html>

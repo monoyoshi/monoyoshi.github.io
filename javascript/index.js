@@ -2,15 +2,15 @@
 
 // highlight text and delete all
 let twDeleteAll = async () => {
-    document.getElementById("typed").innerHTML = `<mark>${document.getElementById("typed").innerHTML}</mark>`;
-    setTimeout(() => document.getElementById("typed").innerHTML = "", 200);
+    $("#typed").html(`<mark>${$("#typed").html()}</mark>`);
+    setTimeout(() => $("#typed").html(""), 200);
 };
 
 // typing
 let twAdd = async (phrase = "", index = 0) => {
     if (index < phrase.length) {
         setTimeout(() => {
-            document.getElementById("typed").innerHTML += phrase[index];
+            $("#typed").append(phrase[index]);
             twAdd(phrase, ++index);
         }, 50);
     };
@@ -18,12 +18,12 @@ let twAdd = async (phrase = "", index = 0) => {
 
 // delete text (simulates backspace)
 let twDelete = async (length = 0) => {
-    if (length > 0 || document.getElementById("typed").innerHTML > 0) {
+    if (length > 0) {
         setTimeout(() => {
-            document.getElementById("typed").innerHTML = document.getElementById("typed").innerHTML.slice(0, -1);
+            $("#typed").html($("#typed").html().slice(0, -1));
             twDelete(length - 1);
         }, 40);
-    }
+    };
 };
 
 // typewriter animation
@@ -32,6 +32,7 @@ let twDelete = async (length = 0) => {
 // only problem is that it gets super messed up if u look away
 // so there's a cleaning click event that fixes everything
 function twAnimation() {
+    // oh btw this sorta simulates my own way of typing, style and speed and all
     twDeleteAll().then(function () {
         setTimeout(() => twAdd("oh "), 200);
         setTimeout(() => twAdd("wait"), 450);
@@ -58,7 +59,7 @@ function twAnimation() {
         setTimeout(() => twAdd("..."), 13500);
         setTimeout(() => twDelete(3), 14000);
         setTimeout(() => twAdd("welcome"), 17000);
-        setTimeout(() => twAdd("!!"), 17500);
+        setTimeout(() => twAdd("!!"), 17600);
         setTimeout(() => twAdd(" welcome to my "), 18000);
         setTimeout(() => twAdd("cool"), 19000);
         setTimeout(() => twDelete(4), 20000);
@@ -74,33 +75,31 @@ function twAnimation() {
         setTimeout(() => twAdd("folio"), 29400);
         setTimeout(() => twAdd("!!"), 30000);
         setTimeout(() => twAdd(" :D"), 31500);
-        setTimeout(() => document.getElementById("caret").style.display = "none", 34000);
+        setTimeout(() => $("#caret").css("display", "none"), 34000);
     });
 };
 
+// typewriter
+
 // on load
-window.addEventListener("load", function () {
-    // hardcoded animation fix
-    document.getElementById("welcomefix").addEventListener("click", function () {
+$(document).ready(function () {
+    // animation fix
+    $("#welcomefix").click(function () {
         let fullstop = setTimeout(";");
         let i = 0;
         while (i < fullstop) {
             clearTimeout(i);
             ++i;
         };
-        document.getElementById("caret").style.display = "none";
-        console.log(document.getElementById("typed").innerHTML);
-        if (document.getElementById("typed").innerHTML != "welcome to my funny and cool portfolio!! :D") {
-            document.getElementById("typed").innerHTML = "welcome to my funny and cool portfolio!! :D";
-            document.getElementById("welcomefail").innerHTML = "it <i>should</i> be correct now...";
+        $("#caret").css("display", "none");
+        if ($("#typed").html() != "welcome to my funny and cool portfolio!! :D") {
+            $("#typed").html("welcome to my funny and cool portfolio!! :D");
+            $("#welcomefail").html("it <i>should</i> be correct now...");
         }
-        else document.getElementById("welcomefail").innerHTML = "it's already correct though...";
+        else $("#welcomefail").html("it's already correct though...");
         
     });
 
     // hardcoded animation
     setTimeout(() => twAnimation(), 1000);
-
-    // age fix
-    document.getElementById("age").innerHTML = `${ageCalc("07/30/2000")}`;
 });

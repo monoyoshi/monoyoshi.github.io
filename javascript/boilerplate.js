@@ -1,9 +1,92 @@
-// footer generation
-// I wanna have a footer I can easily update through one file
+// header and footer generation
+// I wanna have a header and a footer I can easily update through one file
 // especially since it's static across all pages
 
-// setting the file offset (so it can be used for any file in the directory)
-function footer(offset) {
+function header(offset = 0, active = "none", pactive = "none") {
+    // offset = how many...directories(?) are needed to reach the root directory
+    let i = 0; // count
+    let jump = ""; // extender
+    while (i < offset) {
+        jump += "../";
+        ++i;
+    };
+
+    // active = active "section" of the website
+    let current = ["", "", "", ""]; // my funny workaround is just an array
+    let pcurrent = ["", "", "", "", ""]; // two of them (also for the projects dropdown).
+    // if something's not active, the active property won't be inserted
+    switch (active) {
+        case "none":
+            break;
+        case "about": {
+            current[0] = ` id="active"`;
+            break;
+        };
+        case "art": {
+            current[1] = ` id="active"`;
+            break;
+        };
+        case "projects": {
+            current[2] = ` id="active"`;
+            switch (pactive) {
+                case "none":
+                    break;
+                case "hotarun": {
+                    pcurrent[0] = ` id="active"`;
+                    break;
+                };
+                case "sticker": {
+                    pcurrent[1] = ` id="active"`;
+                    break;
+                };
+                case "surtranslate": {
+                    pcurrent[2] = ` id="active"`;
+                    break;
+                };
+                case "wikyu": {
+                    pcurrent[3] = ` id="active"`;
+                    break;
+                };
+                case "dragalife": {
+                    pcurrent[4] = ` id="active"`;
+                };
+            };
+            break;
+        };
+        case "contact": {
+            current[3] = `id="active"`;
+        };
+    };
+
+    return `<!-- header -->
+<!-- topbar -->
+<div class="flexbox center" id="topbar">
+    <a href="${jump.slice(0, -1)}/"><img src="${jump}assets/logo.png" alt="logo" style="margin: 0;"></a>
+    <a href="${jump}about" class="navbutton"${current[0]}>about me</a>
+    <a href="${jump}art" class="navbutton"${current[1]}>art</a>
+    <div class="dropdown">
+        <a href="${jump}projects" class="navbutton"${current[2]}>projects</a>
+        <div class="ddcontent">
+            <a href="hotarun"${pcurrent[0]}>hotarun</a>
+            <a href="sticker"${pcurrent[1]}>sticker</a>
+            <a href="surtranslate"${pcurrent[2]}>surtranslate</a>
+            <a href="wikyu"${pcurrent[3]}>wikyu</a>
+            <a href="dragalife"${pcurrent[4]}>dragalife</a>
+        </div>
+    </div>
+    <a href="${jump}contact" class="navbutton"${current[3]}>contact</a>
+</div>
+
+<!-- funny kyurem sprites :) -->
+<div class="gallery" style="position: fixed; bottom: 0; right: 0">
+    <img src="${jump}assets/kyurem/sprite-animated_kyurem.png">
+    <img src="${jump}assets/kyurem/sprite-animated_kyurem-black.png">
+    <img src="${jump}assets/kyurem/sprite-animated_kyurem-white.png">
+</div>
+<!-- - - - - - - - - - -->`;
+};
+
+function footer(offset = 0) {
     // offset = how many...directories(?) are needed to reach the root directory
     let i = 0; // count
     let jump = ""; // extender
@@ -13,12 +96,6 @@ function footer(offset) {
     };
 
     return `<!-- footer -->
-<div class="gallery" style="position: fixed; bottom: 0; right: 0">
-    <img src="${jump}assets/kyurem/sprite-animated_kyurem.png" style="max-width: 100%">
-    <img src="${jump}assets/kyurem/sprite-animated_kyurem-black.png" style="max-width: 100%">
-    <img src="${jump}assets/kyurem/sprite-animated_kyurem-white.png" style="max-width: 100%">
-</div>
-
 <div class="gallery">
     <div class="tooltip" style="padding: 0 20px;">
         <a href="https://twitter.com/kyu_rem_" target="_blank" id="social"><img src="${jump}assets/logos/twitter.png" width="32"></a>
