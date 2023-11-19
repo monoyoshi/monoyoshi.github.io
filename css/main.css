@@ -320,6 +320,10 @@ table.transparent td {
     font-size: 1.17em;
 }
 
+.ddcontent a:active {
+    color: white;
+}
+
 .dropdown:hover .ddcontent {
     display: block;
 }

@@ -67,11 +67,11 @@ function header(offset = 0, active = "none", pactive = "none") {
     <div class="dropdown">
         <a href="${jump}projects" class="navbutton"${current[2]}>projects</a>
         <div class="ddcontent">
-            <a href="hotarun"${pcurrent[0]}>hotarun</a>
-            <a href="sticker"${pcurrent[1]}>sticker</a>
-            <a href="surtranslate"${pcurrent[2]}>surtranslate</a>
-            <a href="wikyu"${pcurrent[3]}>wikyu</a>
-            <a href="dragalife"${pcurrent[4]}>dragalife</a>
+            <a href="${jump}hotarun"${pcurrent[0]}>hotarun</a>
+            <a href="${jump}sticker"${pcurrent[1]}>sticker</a>
+            <a href="${jump}surtranslate"${pcurrent[2]}>surtranslate</a>
+            <a href="${jump}wikyu"${pcurrent[3]}>wikyu</a>
+            <a href="${jump}dragalife"${pcurrent[4]}>dragalife</a>
         </div>
     </div>
     <a href="${jump}contact" class="navbutton"${current[3]}>contact</a>
