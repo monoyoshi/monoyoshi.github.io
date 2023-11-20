@@ -72,10 +72,10 @@ function header(offset = 0, active = "none", pactive = "none") {
                 <a href="${jump}projects"${current[2]} class="ddsource">projects</a>
                 <div class="ddcontent">
                     <a href="${jump}hotarun"${pcurrent[0]}>hotaru(n)</a>
-                    <a href="${jump}sticker"${pcurrent[1]}>dl sticker soundboard</a>
-                    <a href="${jump}surtranslate"${pcurrent[2]}>surtr translator</a>
+                    <a href="${jump}sticker"${pcurrent[1]}>dl sticker spampage</a>
+                    <a href="${jump}surtranslate"${pcurrent[2]}>surtr dragalia translator (+jp)</a>
                     <a href="${jump}wikyu"${pcurrent[3]}>wikyu</a>
-                    <a href="${jump}dragalife"${pcurrent[4]}>dragalia life archive</a>
+                    <a href="${jump}dragalife"${pcurrent[4]}>dragalia life archive v9</a>
                 </div>
             </div>
             <a href="${jump}contact"${current[3]}>contact</a>
