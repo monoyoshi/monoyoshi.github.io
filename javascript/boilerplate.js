@@ -60,21 +60,27 @@ function header(offset = 0, active = "none", pactive = "none") {
 
     return `<!-- header -->
 <!-- topbar -->
-<div class="flexbox center" id="topbar">
-    <a href="${jump.slice(0, -1)}/"><img src="${jump}assets/logo.png" alt="logo" style="margin: 0;"></a>
-    <a href="${jump}about" class="navbutton"${current[0]}>about me</a>
-    <a href="${jump}art" class="navbutton"${current[1]}>art</a>
-    <div class="dropdown">
-        <a href="${jump}projects" class="navbutton"${current[2]}>projects</a>
-        <div class="ddcontent">
-            <a href="${jump}hotarun"${pcurrent[0]}>hotarun</a>
-            <a href="${jump}sticker"${pcurrent[1]}>sticker</a>
-            <a href="${jump}surtranslate"${pcurrent[2]}>surtranslate</a>
-            <a href="${jump}wikyu"${pcurrent[3]}>wikyu</a>
-            <a href="${jump}dragalife"${pcurrent[4]}>dragalife</a>
+<div class="topbar">
+    <div class="flexbox center horizontal" style="margin: 0 15%;">
+        <div>
+            <a href="${jump.slice(0, -1)}/" style="margin: 0; padding: 0;"><img src="${jump}assets/logo.png" alt="logo" style="vertical-align: middle; margin: 0;"></a>
+        </div>
+        <div class="flexbox center horizontal" style="width: 100%; justify-content: space-around; margin: auto;">
+            <a href="${jump}about"${current[0]}>about me</a>
+            <a href="${jump}art"${current[1]}>art</a>
+            <div class="dropdown" style="width: 100%;">
+                <a href="${jump}projects"${current[2]} class="ddsource">projects</a>
+                <div class="ddcontent">
+                    <a href="${jump}hotarun"${pcurrent[0]}>hotaru(n)</a>
+                    <a href="${jump}sticker"${pcurrent[1]}>dl sticker soundboard</a>
+                    <a href="${jump}surtranslate"${pcurrent[2]}>surtr translator</a>
+                    <a href="${jump}wikyu"${pcurrent[3]}>wikyu</a>
+                    <a href="${jump}dragalife"${pcurrent[4]}>dragalia life archive</a>
+                </div>
+            </div>
+            <a href="${jump}contact"${current[3]}>contact</a>
         </div>
     </div>
-    <a href="${jump}contact" class="navbutton"${current[3]}>contact</a>
 </div>
 
 <!-- funny kyurem sprites :) -->
@@ -127,7 +133,7 @@ function footer(offset = 0) {
     </div>
 
     <div class="tooltip" style="padding: 0 20px;">
-        <a href="javascript:;" target="_blank" id="social"><img src="${jump}assets/logos/google-drive.png" width="32"></a>
+        <a href="javascript:;" id="social"><img src="${jump}assets/logos/google-drive.png" width="32"></a>
         <span class="ttpopup">
             <b>google drive art folder</b>
             <hr>

@@ -12,23 +12,19 @@ body {
     margin: 0 15%;
 }
 
-article, footer {
+article {
     margin-top: 15%;
 }
 
 footer {
     text-align: center;
     color: rgb(180, 180, 180);
+    margin-top: 15%;
 }
 
 a {
     color: rgb(50, 160, 255);
     text-decoration: none;
-}
-
-button {
-    font-family: inherit;
-    font-size: 16px;
 }
 
 a:hover:active {
@@ -38,6 +34,11 @@ a:hover:active {
 a#social img:hover {
     filter: brightness(200%);
     transition: 0.3s;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
 }
 
 mark {
@@ -276,52 +277,59 @@ table.transparent td {
 /* - - - - - - - - - */
 
 /* topbar */
-.flexbox#topbar {
+.topbar {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgb(10, 15, 15);
-    position: fixed;
     z-index: 99;
-    justify-content: space-around;
 }
 
-.flexbox#topbar .navbutton {
-    background-color: transparent;
-    border: none;
+.topbar a {
+    display: block;
+    text-align: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.17em;
+    width: 100%;
 }
 
-.flexbox#topbar #active {
-    background-color: transparent;
-    color: white;
+.topbar a:hover {
     font-weight: bold;
 }
 
-/* - - - - - - - - - */
+.topbar a:hover:active {
+    color: white;
+}
 
-/* navbar dropdown */
+.topbar #active {
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
 
 .ddcontent {
     display: none;
     position: absolute;
-    top: 75%;
-    background-color: rgb(10, 15, 15);;
+    background-color: rgb(10, 15, 15);
+    width: 100%;
     z-index: 99;
-    padding-top: 15px;
 }
 
 .ddcontent a {
-    float: none;
-    color: white;
-    padding: 10px 15px;
     display: block;
-    font-size: 1.17em;
+    color: white;
+    margin: 10px 0;
 }
 
-.ddcontent a:active {
-    color: white;
+.ddcontent a:hover {
+    font-weight: bold;
+}
+
+.dropdown:hover .ddsource {
+    font-weight: bold;
 }
 
 .dropdown:hover .ddcontent {
