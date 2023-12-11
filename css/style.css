@@ -337,3 +337,10 @@ table.transparent td {
 }
 
 /* - - - - - - - - - */
+
+.textbutton {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}

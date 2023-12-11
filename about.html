@@ -8,7 +8,7 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@
     <script>
         // calculate age, current time on load
         $(document).ready(function () {
-            $("#age").text(ageCalc("07/30/2000"));
+            $("#age").text(ageCalc("07/30/2000") + 3999);
             setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
         });
     </script>
@@ -88,7 +88,7 @@
                         </tr>
                         <tr>
                             <th>Birthday</th>
-                            <td>July 30, 2000 (Leo; age <span id="age">????</span>)</td>
+                            <td>July 30, 2000 BC (Leo; age <span id="age">????</span>)</td>
                         </tr>
                         <tr>
                             <th>Residence</th>
@@ -126,6 +126,7 @@
                         <tr>
                             <th>Hobbies</th>
                             <td>
+                                Vibing<br>
                                 Gaming<br>
                                 Drawing<br>
                                 Programming
@@ -417,44 +418,18 @@
                         </td>
                     </tr>
                     <tr>
+                        <th>GitHub</th>
+                        <td>
+                            <div class="progressbar">
+                                <div class="indicator" style="width: 90%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
                         <th>Glitch</th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Zoom</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Autocode</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 50%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Open Broadcasting Software</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">GitHub</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
                             </div>
                         </td>
                     </tr>
@@ -467,8 +442,18 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Audacity</th>
+                        <th>Zoom</th>
                         <td>
+                            <div class="progressbar">
+                                <div class="indicator" style="width: 90%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="transparent" style="width: 100%;">
+                    <tr>
+                        <th style="width: 50%">Audacity</th>
+                        <td style="width: 50%">
                             <div class="progressbar">
                                 <div class="indicator" style="width: 70%"></div>
                             </div>
@@ -487,6 +472,14 @@
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 50%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Open Broadcasting Software</th>
+                        <td>
+                            <div class="progressbar">
+                                <div class="indicator" style="width: 90%"></div>
                             </div>
                         </td>
                     </tr>
