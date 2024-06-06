@@ -42,7 +42,7 @@ a {
     
 }
 
-a:hover:active {
+a:hover:active:not(a.button) {
     color: var(--a_yellow);
 }
 
@@ -80,6 +80,12 @@ a.button:hover {
     background-color: var(--a_lightblue);
 }
 
+button#active,
+a.button#active {
+    background-color: var(--a_lightblue);
+}
+
+
 /* - - - - - - - - - */
 
 /* img */
@@ -102,7 +108,7 @@ table {
     background-color: var(--dgray);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 5px 0 var(--shadow);
+    box-shadow: 5px 5px 0 var(--shadow);
     text-align: left;
 }
 
