@@ -1,105 +1,108 @@
-// typewriter
+$(document).ready(function() {
+    let $lhs = $("#lhs");
+    let $rhs = $("#rhs");
 
-// highlight text and delete all
-let twDeleteAll = async () => {
-    $("#typed").html(`<mark>${$("#typed").html()}</mark>`);
-    setTimeout(() => $("#typed").html(""), 200);
-};
+    let $gameHistory = $("#gamehistory");
+    let $choices = $("#choices");
 
-// typing
-let twAdd = async (phrase = "", index = 0) => {
-    if (index < phrase.length) {
-        setTimeout(() => {
-            $("#typed").append(phrase[index]);
-            twAdd(phrase, ++index);
-        }, 50);
-    };
-};
 
-// delete text (simulates backspace)
-let twDelete = async (length = 0) => {
-    if (length > 0) {
-        setTimeout(() => {
-            $("#typed").html($("#typed").html().slice(0, -1));
-            twDelete(length - 1);
-        }, 40);
-    };
-};
+    let $buttonZero = $("#0");
+    let $buttonOne = $("#1");
+    let $buttonTwo = $("#2");
 
-// typewriter animation
-// if there's a better way to do this, I would not know. anyway, here's my workaround: a hard-coded animation
-// it at least gets the job done and I can customize it :)
-// only problem is that it gets super messed up if u look away
-// so there's a cleaning click event that fixes everything
-function twAnimation() {
-    // oh btw this sorta simulates my own way of typing, style and speed and all
-    twDeleteAll().then(function () {
-        setTimeout(() => twAdd("oh "), 200);
-        setTimeout(() => twAdd("wait"), 450);
-        setTimeout((twDeleteAll), 2000);
-        setTimeout(() => twAdd("he"), 2300);
-        setTimeout(() => twAdd("llo"), 2550);
-        setTimeout(() => twAdd("!!"), 3200);
-        setTimeout(() => twAdd(" :D"), 3700);
-        setTimeout((twDeleteAll), 5000);
-        setTimeout(() => twAdd("uhhh"), 5500);
-        setTimeout(() => twAdd("h"), 5700);
-        setTimeout(() => twAdd("h"), 5950);
-        setTimeout(() => twAdd("h"), 6200);
-        setTimeout(() => twAdd("h"), 6450);
-        setTimeout(() => twAdd(" hold on"), 7000);
-        setTimeout((twDeleteAll), 8500);
-        setTimeout(() => twAdd("monoyo"), 9000);
-        setTimeout(() => twAdd("shi"), 9500);
-        setTimeout(() => twAdd("."), 10000);
-        setTimeout(() => twAdd("github"), 10500);
-        setTimeout(() => twAdd("."), 11000);
-        setTimeout(() => twAdd("io"), 11500);
-        setTimeout((twDeleteAll), 12800);
-        setTimeout(() => twAdd("..."), 13500);
-        setTimeout(() => twDelete(3), 14000);
-        setTimeout(() => twAdd("welcome"), 17000);
-        setTimeout(() => twAdd("!!"), 17600);
-        setTimeout(() => twAdd(" welcome to my "), 18000);
-        setTimeout(() => twAdd("cool"), 19000);
-        setTimeout(() => twDelete(4), 20000);
-        setTimeout(() => twAdd("amazing"), 21000);
-        setTimeout((twDeleteAll), 23000);
-        setTimeout(() => twAdd("welcome to my "), 24000);
-        setTimeout(() => twAdd("uhh"), 25000);
-        setTimeout(() => twDelete(4), 26000);
-        setTimeout(() => twAdd(" "), 27000);
-        setTimeout(() => twAdd("funny "), 27500);
-        setTimeout(() => twAdd("and cool "), 28000);
-        setTimeout(() => twAdd("port"), 29000);
-        setTimeout(() => twAdd("folio"), 29400);
-        setTimeout(() => twAdd("!!"), 30000);
-        setTimeout(() => twAdd(" :D"), 31500);
-        setTimeout(() => $("#caret").css("display", "none"), 34000);
-    });
-};
+    let mh = $lhs.css("height");
 
-// typewriter
+    let section = 0;
 
-// on load
-$(document).ready(function () {
-    // animation fix
-    $("#welcomefix").click(function () {
-        let fullstop = setTimeout(";");
+    function makeChoice(answer = [], next = [], choices = [], sectionJump = 0) {
+        let $answer = $("<div>", {
+            class: "flexbox",
+            css: {
+                "margin-left": "30px"
+            }
+        })
+            .append($("<div>", {
+                css: {
+                    "padding-right": "15px"
+                }
+            })
+                .html("<b>You</b>:")
+        );
+        
         let i = 0;
-        while (i < fullstop) {
-            clearTimeout(i);
+        let $theAnswer = $("<div>");
+        while (i < answer.length) {
+            $answer.append(`${answer[i]}<br>`)
             ++i;
         };
-        $("#caret").css("display", "none");
-        if ($("#typed").html() != "welcome to my funny and cool portfolio!! :D") {
-            $("#typed").html("welcome to my funny and cool portfolio!! :D");
-            $("#welcomefail").html("it <i>should</i> be correct now...");
+        $theAnswer.append($answer);
+        $gameHistory.append($theAnswer);
+
+        i = 0;
+        while (i < next.length) {
+            $gameHistory.append(`<p>${next[i]}</p>`);
+            ++i;
+        };
+
+        if (choices.length != 0) {
+            i = 0;
+            while (i < choices.length) {
+                $choices.children().eq(i).addClass("active");
+                $choices.children().eq(i).text(choices[i]);
+                ++i;
+            };
         }
-        else $("#welcomefail").html("it's already correct though...");
-        
+        else {
+            $choices.css("display", "none");
+        }
+
+        section = sectionJump;
+    }
+    
+    $lhs.css("max-height", mh);
+    $rhs.css("max-height", mh);
+
+    // game
+    $buttonZero.click(function() {
+        if (section == 0) {
+            makeChoice(
+                ["Yo."],
+                ["Hello hello! What brings you here, huh?"],
+                ["Just passing by.", "I heard you were doing cool things in here.", "I've been trying to contact you about your car's extended warranty."],
+                1
+            );
+        }
+        else if (section == 1) {
+            makeChoice(
+                ["Just passing by."],
+                ["Oh, okay! Be safe on your travels."]
+            );
+        };
     });
 
-    // hardcoded animation
-    setTimeout(() => twAnimation(), 1000);
-});
+    $buttonOne.click(function() {
+        if (section == 0) {
+            makeChoice(
+                ["Hey there!"],
+                ["Hello there! What brings you here, huh?"],
+                ["Just passing by.", "I heard you were doing cool things in here.", "I've been trying to contact you about your car's extended warranty."],
+                1
+            );
+        }
+        else if (section == 1) {
+            makeChoice(
+                ["I heard you were doing cool things in here."],
+                ["I really am!", "Check out the navigation links down there and have fun exploring!"]
+            );
+        };
+    });
+
+    $buttonTwo.click(function() {
+        if (section == 1) {
+            makeChoice(
+                ["I've been trying to contact you about your car's extended warranty."]
+            );
+        };
+
+    });
+})

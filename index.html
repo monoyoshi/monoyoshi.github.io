@@ -2,37 +2,42 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="global-assets/pictures/favicon.png">
     <title>home | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/typewriter.css">
+    <link rel="stylesheet" href="global-assets/css/colors.css">
+    <link rel="stylesheet" href="global-assets/css/fonts.css">
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="global-assets/css/style.css">
+
+    <!-- local -->
+    <link rel="stylesheet" href="global-assets/css/dust.css">
+    <link rel="stylesheet" href="global-assets/css/textadventure.css">
 
     <!-- scripts -->
+    <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- 
-        as I've seen, jquery makes a lot more things streamlined, so I might as well...
-        besides, you can see my javascript skills elsewhere :)
-    -->
 
-    <script src="javascript/main.js"></script>
-    <script src="javascript/boilerplate.js"></script>
+    <script src="global-assets/javascript/boilerplate.js"></script>
     <script>
         // insert header and footer
         $(document).ready(function () {
-            $("header").html(header(0));
-            $("footer").html(footer(0));
+            header(0, "index");
+            footer(0);
         });
     </script>
 
-    <script src="javascript/agecalc.js"></script>
+    <!-- local -->
+    <script src="global-assets/javascript/dust.js"></script>
 
     <script src="javascript/index.js"></script>
+
 </head>
 
 <body>
@@ -40,92 +45,30 @@
 
     <article>
         <div class="flexbox center">
-            <div class="frame" style="width: 45%;">
-                <img src="assets/placeholder/drgl-5.png" alt="welcome">
+            <div id="lhs" class="frame" style="width: 45%;">
+                <img src="global-assets/pictures/placeholder/drgl-5.png" alt="welcome">
             </div>
-            <div class="textbox" style="width: 55%;">
-                <span class="h1" id="typed">[insert title here]</span><span id="caret"></span></span>
-                <p>
-                    yo! the name's <b>kyu(rem)</b>, and welcome to my funny and cool portfolio!!<br>
-                    if this page loads correctly, it should eventually say the same thing up there :)<br>
-                    <span id="welcomefail">if it's not looking too good, then uh,
-                    <a id="welcomefix" style="cursor: pointer;">click this</a>!</span>
-                </p>
-                <p>
-                    anyway, check it out! cool, right?<br>
-                    one day I thought I should probably have something like a portfolio, just 'cuz I think it would
-                    be neat to see all the stuff I've done in one place. I usually keep a lot of my uhhh...hyperfixation
-                    projects...to myself, but you know what? I think they deserve to be at least somewhat available to
-                    you all.
-                </p>
-                <p>so! here y'all go! enjoy!</p>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="flexbox center">
-            <div style="width: 60%;">
-                <div class="textbox">
-                    <div class="h1"><b>who am I?</b></div>
-                    <p>
-                        I am who you might know as <b>kyu(rem)</b>, and I'm just your friendly neighborhood dragon that
-                        does a lot of funny things. I am <i>quite literally</i> like the pokémon. but cooler. maybe.<br>
-                        anyway, what kinda funny things, you might ask? well.
-                    </p>
-                    <p>
-                        see this website here? I made it <b>all</b> (ok well, other than some of the pictures. though,
-                        the day <i>will</i> eventually come when I will replace most if not all these placeholder images
-                        with my own. probably). cool, right?
-                    </p>
-                    <p>
-                        yeah. so anyway, I like to play games, make art, and program. I lose it over dragons, cute
-                        stuff, and a certain type of anime guy. I also just like roaming around the internet. you've
-                        probably seen me around. I don't really talk much, but I love the things I love, and everything
-                        I do is centered around them.
-                    </p>
-                    <p>wait, have I told you that I like swords?</p>
+            <div id="rhs" style="width: 55%;">
+                <div id="gametext" class="textbox">
+                    <span class="h1" id="typed">monoyoshi.github.io</span>
+                    <div id="gamehistory">
+                        <p>Yo! The name's <b>kyu(ren)</b>, and welcome to my funny website!!</p>
+                    </div>
+                    <div id="choices">
+                        <button class="active" id="0">Yo.</button>
+                        <button class="active" id="1">Hey there!</button>
+                        <button id="2">H-hello...</button>
+                    </div>
                 </div>
-                <div class="gallery">
-                    <img src="assets/kyurem/kyurem.png" alt="kyurem" width="30%">
-                    <img src="assets/kyurem/kyurem-black.png" alt="kyurem-black" width="30%">
-                    <img src="assets/kyurem/kyurem-white.png" alt="kyurem-white" width="30%">
-                </div>
-            </div>
-            <div style="width: 40%;">
-                <div class="frame">
-                    <img src="assets/placeholder/zodiloaf.png">
-                </div>
-                <table style="margin: 15px auto;">
-                    <tr>
-                        <th>Name</th>
-                        <td>kyu(rem)</td>
-                    </tr>
-                    <tr>
-                        <th>Pronouns</th>
-                        <td>
-                            <span class="tooltip">They/him<span class="ttpopup">Like, "they slash him"</span></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Birthday</th>
-                        <td>July 30</td>
-                    </tr>
-                    <tr><td><br></td></tr>
-                    <tr>
-                        <th>Hobbies</th>
-                        <td>Vibing</td>
-                    </tr>
-                    <tr>
-                        <th>Special skills</th>
-                        <td>Being a funny, silly, goofy guy</td>
-                    </tr>
-                </table>
             </div>
         </div>
     </article>
 
     <footer></footer>
+
+    <div id="viewport">
+        <div id="dust-canvas"></div>
+    </div>
 </body>
 
 </html>

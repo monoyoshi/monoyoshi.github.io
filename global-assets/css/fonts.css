@@ -1,0 +1,9 @@
+* {
+    font-family: "RocknRoll One", sans-serif;
+}
+
+html {
+    font-size: 16px;
+    color: var(--white);
+    line-height: 1.6;
+}

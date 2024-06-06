@@ -2,36 +2,49 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <title>about me! | monoyoshi.github.io</title>
+    <link rel="icon" type="image/png" href="global-assets/pictures/favicon.png">
+    <title>profile | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="global-assets/css/colors.css">
+    <link rel="stylesheet" href="global-assets/css/fonts.css">
+
+    <link rel="stylesheet" href="global-assets/css/style.css">
+
+    <!-- local -->
+    <link rel="stylesheet" href="global-assets/css/dust.css">
 
     <!-- scripts -->
+    <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="javascript/main.js"></script>
-    <script src="javascript/boilerplate.js"></script>
+    <script src="global-assets/javascript/boilerplate.js"></script>
     <script>
         // insert header and footer
         $(document).ready(function () {
-            $("header").html(header(0, "about"));
-            $("footer").html(footer(0));
+            header(0, "profile");
+            footer(0);
         });
     </script>
+
+    <!-- local -->
+    <script src="global-assets/javascript/dust.js"></script>
 
     <script src="javascript/agecalc.js"></script>
     <script src="javascript/timecalc.js"></script>
     <script>
         // calculate age, current time on load
         $(document).ready(function () {
-            $("#age").text(ageCalc("07/30/2000") + 3999);
+            $("#age").text(ageCalc("07/30/2000") + 4000);
             setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
         });
     </script>
+
 </head>
 
 <body>
@@ -40,19 +53,19 @@
     <article>
         <div class="flexbox">
             <div class="frame" style="width: 40%; margin: 0;">
-                <img src="assets/placeholder/junkun.png" alt="self-portrait" style="margin: 0;">
+                <img src="global-assets/pictures/placeholder/junkun.png" alt="self-portrait" style="margin: 0;">
             </div>
             <div class="flexbox center" style="width: 60%;">
                 <div style="width: 65%;">
                     <div class="textbox">
                         <div class="h2">Sword Enthusiast</div>
-                        <div class="h1">kyu(rem)</div>
+                        <div class="h1">kyu(ren)</div>
                         <div class="quote">"I'm like <s>the</s> joker but non-binary."</div>
                         <p>
-                            A dragon who lives in what they affectionately call "the void." They are passionate in their
-                            interests, which include swords, dragons, and blue-haired anime swordsmen. On their free
-                            time, they are usually found playing games, drawing, "hacking" (programming), vibing to
-                            music, or being funny.
+                            Some guy who lives in the void and has a lot of free time, supposedly. They are passionate
+                            in their interests, which include swords, dragons, dogs, tea-making, and blue-haired anime
+                            swordsmen. On their free time, they are usually found playing games, drawing, being a
+                            hackerman (programming), or just plain vibing.
                         </p>
                         <br>
                         <div class="h1">Profile</div>
@@ -61,22 +74,26 @@
                         <tr>
                             <th>Aliases</th>
                             <td>
-                                <span class="tooltip">Kyurem Dragali<span class="ttpopup">キュレム・ドラガリ</span></span><br>
                                 Kyu<br>
-                                <span class="tooltip">Q<span class="ttpopup">Pronounced "kyu"</span></span><br>
-                                <span class="tooltip">9<span class="ttpopup">Pronounced "kyu"</span></span><br>
-                                <a href="wikyu/ren">Ren</a><br>
+                                <span class="tooltip">Q<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
+                                <span class="tooltip">9<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
+                                Ren<br>
                                 Marth<br>
-                                KyuremTrainer<br>
+                                KyurenTrainer<br>
                                 Pika(hardt)<br>
-                                Balls<br>
                                 Senpai
                             </td>
                         </tr>
-                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
                         <tr>
                             <th>Species</th>
                             <td>Dragon(?)</td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td>??? / Gender unknown</td>
                         </tr>
                         <tr>
                             <th>Pronouns</th>
@@ -97,10 +114,15 @@
                         <tr>
                             <th>Timezone</th>
                             <td>
-                                <span class="tooltip">Central Time (UTC-5/UTC-6)<span class="ttpopup" id="currenttime">Current time: ????/??/?? ??:??:?? UTC??</span></span>
+                                <span class="tooltip">
+                                    Central Time (UTC-5/UTC-6)
+                                    <span class="ttpopup"id="currenttime">Current time: ????/??/?? ??:??:?? UTC??</span>
+                                </span>
                             </td>
                         </tr>
-                        <tr><td><br></td></tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
                         <tr>
                             <th>Likes</th>
                             <td>
@@ -118,9 +140,13 @@
                         <tr>
                             <th>Favorite food</th>
                             <td>
-                                Pasta<br>
                                 Bread<br>
-                                <span class="tooltip">Fruit<span class="ttpopup">Favorite fruit: dragonfruit, blueberries, strawberries</span></span>
+                                <span class="tooltip">
+                                    Fruit
+                                    <span class="ttpopup">Favorite fruits: dragonfruit, blueberries, strawberries</span>
+                                </span><br>
+                                Cheese<br>
+                                Tea
                             </td>
                         </tr>
                         <tr>
@@ -136,7 +162,12 @@
                             <th>Special skills</th>
                             <td>
                                 Being a funny, silly, goofy guy<br>
-                                Hyperfixation
+                                Hyperfixation<br>
+                                <span class="tooltip">
+                                    Making banana bread
+                                    <span class="ttpopup">Really, <!--a href="recipes/banana-bread.html"-->it's good<!--/a-->!</span>
+                                </span><br>
+                                 
                             </td>
                         </tr>
                     </table>
@@ -144,39 +175,38 @@
             </div>
         </div>
 
-        <br>
+        <br class="big">
 
         <div class="flexbox">
             <div class="textbox" style="width: 50%;">
                 <div class="h1">Interests</div>
-                <div class="note">See also: <a href="kyulist">the Lists</a></div>
-                <p>I like a lot of random stuff. Listed below are my current main hyperfixations.</p>
+                <!--div class="note">See also: <a>The Lists™</a></div-->
+                <p>I like lots of stuff. Listed below are my current core hyperfixations.</p>
                 <ul>
                     <li><b>Dragalia Lost</b></li>
-                    <li><b>Original Characters</b> (<a href="wikyu">wikyu</a>)</li>
+                    <li><b>Original Characters</b> (<a href="wikyu">Project DROCSI</a>)</li>
                     <li><b>Pokémon</b></li>
                     <li><b>Honkai: Star Rail</b></li>
                     <li><b>Ensemble Stars!!</b></li>
-                    <li><b>Ren Zotto</b></li>
-                    <li><b>Genshin Impact</b></li>
                     <li><b>Fire Emblem</b></li>
+                    <li><b>Taiko no Tatsujin</b></li>
                 </ul>
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="assets/placeholder/miku.png">
+                <img src="global-assets/pictures/placeholder/miku.png" alt="funny">
             </div>
         </div>
 
-        <br>
+        <br class="big">
 
         <div class="textbox">
             <div class="h1">Skills</div>
-            <div class="note">See also: <a href="projects">projects</a></div>
+            <div class="note">See also: <a href="projects.html">The Hyperfixation Corner</a></div>
             <p>
                 These bars are based off on how I feel about a given subject. A bar that is more filled means that
                 I'm pretty confident when it comes to working with it. I most likely don't know <i>everything</i>,
                 but the projects page should provide some more solid proof that I am a pretty fast learner (I'm also
-                great at self-studying and searching things up :))!
+                great at self-studying and searching things up)!
             </p>
 
             <br>
@@ -286,7 +316,7 @@
                         <th>Outlook</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 100%"></div>
                             </div>
                         </td>
                     </tr>
@@ -429,7 +459,7 @@
                         <th>Glitch</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
+                                <div class="indicator" style="width: 70%"></div>
                             </div>
                         </td>
                     </tr>
@@ -437,7 +467,7 @@
                         <th>Heroku</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 60%"></div>
+                                <div class="indicator" style="width: 40%"></div>
                             </div>
                         </td>
                     </tr>
@@ -471,7 +501,7 @@
                         <th>Inkscape</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 50%"></div>
+                                <div class="indicator" style="width: 90%"></div>
                             </div>
                         </td>
                     </tr>
@@ -486,7 +516,7 @@
                 </table>
             </div>
 
-            <br>
+            <br class="medium">
 
             <div class="h2">Programming Languages</div>
             <hr>
@@ -592,7 +622,7 @@
                 </table>
             </div>
 
-            <br>
+            <br class="medium">
 
             <div class="h2">Spoken Languages</div>
             <hr>
@@ -638,8 +668,7 @@
             <br>
             <div class="h3">
                 <span class="tooltip">Filipino
-                    <span class="ttpopup">I can read and understand just fine, but something happened and I grew up
-                        being unable to write and speak without <i>lots</i> of help.
+                    <span class="ttpopup">Parents' native language.
                     </span>
                 </span>
             </div>
@@ -684,7 +713,7 @@
             <br>
             <div class="h3">
                 <span class="tooltip">Japanese
-                    <span class="ttpopup">Studied throughout high school and college.</span>
+                    <span class="ttpopup">Studied throughout high school and college. Actually my major.</span>
                 </span>
             </div>
             <div class="flexbox">
@@ -777,6 +806,10 @@
     </article>
 
     <footer></footer>
+
+    <div id="viewport">
+        <div id="dust-canvas"></div>
+    </div>
 </body>
 
 </html>
