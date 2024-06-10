@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--black);
+}
+
 ::selection {
     color: var(--white);
     background-color: var(--a_lightblue);
