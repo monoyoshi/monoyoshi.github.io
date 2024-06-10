@@ -53,7 +53,7 @@ function header(offset = 0, active = "none") {
                 class: "header-navbtn",
                 id: current.index[0],
                 css: {
-                    "background-image": `url('${jump}global-assets/pictures/links/index.svg')`
+                    "background-image": `url('${jump}global-assets/images/links/index.svg')`
                 },
                 href: current.index[1]
             }))
@@ -61,7 +61,7 @@ function header(offset = 0, active = "none") {
                 class: "header-navbtn",
                 id: current.profile[0],
                 css: {
-                    "background-image": `url('${jump}global-assets/pictures/links/profile.svg')`
+                    "background-image": `url('${jump}global-assets/images/links/profile.svg')`
                 },
                 href: current.profile[1]
             }))
@@ -69,7 +69,7 @@ function header(offset = 0, active = "none") {
                 class: "header-navbtn",
                 id: current.projects[0],
                 css: {
-                    "background-image": `url('${jump}global-assets/pictures/links/projects.svg')`
+                    "background-image": `url('${jump}global-assets/images/links/projects.svg')`
                 },
                 href: current.projects[1]
             }))
@@ -86,7 +86,7 @@ function footer(offset = 0, removeGitHub = false) {
         ++i;
     };
 
-    let secondline = "<br>hosted on <b>github pages</b> (for now)";
+    let secondline = "<br>hosted on <b>github pages</b>";
     if (removeGitHub) secondline = "";
 
     $("footer").append($("<div>", {
@@ -114,7 +114,7 @@ function footer(offset = 0, removeGitHub = false) {
             }
         })
             .append($("<img>", {
-                src: `${jump}global-assets/pictures/kyurem/sprite-animated_kyurem.png`,
+                src: `${jump}global-assets/images/kyurem/sprite-animated_kyurem.png`,
                 height: "50px",
                 width: "50px",
                 css: {                    

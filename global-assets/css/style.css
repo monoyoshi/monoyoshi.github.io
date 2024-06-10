@@ -25,6 +25,12 @@ hr {
     border-color: var(--white);
 }
 
+/* - - - - - - - - - */
+
+br {
+    line-height: 1.6;
+}
+
 br.medium {
     line-height: 3.2;
 }
@@ -33,7 +39,7 @@ br.big {
     line-height: 6.4;
 }
 
-/* a */
+/* - - - - - - - - - */
 
 a {
     color: var(--a_strongblue);
@@ -47,8 +53,6 @@ a:hover:active:not(a.button) {
 }
 
 /* - - - - - - - - - */
-
-/* button and a.button */
 
 button,
 button#active,
@@ -85,10 +89,7 @@ a.button#active {
     background-color: var(--a_lightblue);
 }
 
-
 /* - - - - - - - - - */
-
-/* img */
 
 img {
     pointer-events: none;
@@ -102,7 +103,6 @@ img:not(.gallery img) {
 
 /* - - - - - - - - - */
 
-/* table */
 table {
     max-width: 100%;
     background-color: var(--dgray);
@@ -133,8 +133,6 @@ table.transparent th,
 table.transparent td {
     padding: 0 15px 0 0;
 }
-
-/* - - - - - - - - - */
 
 /* - - - - - - - - - */
 
@@ -188,7 +186,7 @@ table.transparent td {
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 90;
     pointer-events: none;
 }
 
@@ -206,16 +204,18 @@ table.transparent td {
 }
 
 .header-navbtn#active {
-    z-index: 99;
+    z-index: 90;
     cursor: pointer;
 }
+
+/* - - - - - - - - - */
 
 /* footer */
 .footer-box {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
     right: 0;
+    bottom: 0;
     color: var(--lgray);
     opacity: 0.3;
     transition-duration: 500ms;
@@ -225,6 +225,8 @@ table.transparent td {
 .footer-box:hover {
     opacity: 0.6;
 }
+
+/* - - - - - - - - - */
 
 /* custom headers */
 .h1 {
@@ -261,7 +263,7 @@ table.transparent td {
 
 /* - - - - - - - - - */
 
-/* popup on hover */
+/* tooltip (popup text on hover) */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -287,7 +289,7 @@ table.transparent td {
     box-shadow: 5px 5px 0 var(--shadow);
     transform: translate(-50%, -75%);
     transition: 0.3s;
-    z-index: 1;
+    z-index: 9;
 }
 
 .tooltip:hover .ttpopup {
@@ -320,12 +322,6 @@ table.transparent td {
     height: 100%;
     border-radius: 5px;
     background-color: var(--a_lightblue);
-}
-
-/* - - - - - - - - - */
-
-.section {
-    margin: 15%;
 }
 
 /* - - - - - - - - - */

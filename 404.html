@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="global-assets/pictures/favicon.png">
+    <link rel="icon" type="image/png" href="global-assets/images/favicon.png">
     <title>404 | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
@@ -15,30 +15,32 @@
     <link rel="stylesheet" href="global-assets/css/fonts.css">
 
     <link rel="stylesheet" href="global-assets/css/style.css">
-
-    <!-- local -->
     <link rel="stylesheet" href="global-assets/css/dust.css">
+    <link rel="stylesheet" href="global-assets/css/cursor.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="global-assets/javascript/boilerplate.js"></script>
-    <script src="global-assets/javascript/404.js"></script>
+    <script src="global-assets/javascript/dust.js"></script>
+    <script src="global-assets/javascript/cursor.js"></script>
+
     <script>
-        // insert header and footer
+        // insert header and footer and 404
         $(document).ready(function () {
             header(0);
-            articlefof();
+            articlefof(0);
             footer(0);
         });
     </script>
 
-    <!-- local -->
-    <script src="global-assets/javascript/dust.js"></script>
 </head>
 
 <body>
+    <div id="tap"></div>
+    <div id="drag"></div>
+
     <header></header>
 
     <article></article>

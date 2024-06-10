@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="global-assets/pictures/favicon.png">
+    <link rel="icon" type="image/png" href="global-assets/images/favicon.png">
     <title>profile | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
@@ -15,45 +15,43 @@
     <link rel="stylesheet" href="global-assets/css/fonts.css">
 
     <link rel="stylesheet" href="global-assets/css/style.css">
-
-    <!-- local -->
     <link rel="stylesheet" href="global-assets/css/dust.css">
+    <link rel="stylesheet" href="global-assets/css/cursor.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="global-assets/javascript/boilerplate.js"></script>
+    <script src="global-assets/javascript/dust.js"></script>
+    <script src="global-assets/javascript/cursor.js"></script>
+
+    <!-- local -->
+    <script src="javascript/agecalc.js"></script>
+    <script src="javascript/timecalc.js"></script>
+
     <script>
         // insert header and footer
+        // calculate age, current time on load
         $(document).ready(function () {
             header(0, "profile");
             footer(0);
-        });
-    </script>
-
-    <!-- local -->
-    <script src="global-assets/javascript/dust.js"></script>
-
-    <script src="javascript/agecalc.js"></script>
-    <script src="javascript/timecalc.js"></script>
-    <script>
-        // calculate age, current time on load
-        $(document).ready(function () {
             $("#age").text(ageCalc("07/30/2000") + 4000);
             setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
         });
     </script>
-
 </head>
 
 <body>
+    <div id="tap"></div>
+    <div id="drag"></div>
+
     <header></header>
 
     <article>
         <div class="flexbox">
             <div class="frame" style="width: 40%; margin: 0;">
-                <img src="global-assets/pictures/placeholder/junkun.png" alt="self-portrait" style="margin: 0;">
+                <img src="global-assets/images/placeholder/junkun.png" alt="self-portrait" style="margin: 0;">
             </div>
             <div class="flexbox center" style="width: 60%;">
                 <div style="width: 65%;">
@@ -194,7 +192,7 @@
                 </ul>
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="global-assets/pictures/placeholder/miku.png" alt="funny">
+                <img src="global-assets/images/placeholder/miku.png" alt="funny">
             </div>
         </div>
 
@@ -393,8 +391,8 @@
             <div class="h3">
                 <span class="tooltip">Adobe Creative Cloud
                     <span class="ttpopup">
-                        Because I have no access to any of the programs listed below, I am extremely rusty at the
-                        moment. Trust me though, I have made banger content!
+                        Because I have no access to any of the programs listed below, I am extremely rusty
+                        with the programs themselves at the moment.
                     </span>
                 </span>
             </div>
@@ -533,14 +531,6 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Python</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
                         <th>HTML</th>
                         <td>
                             <div class="progressbar">
@@ -557,6 +547,14 @@
                         </td>
                     </tr>
                     <tr>
+                        <th>Python</th>
+                        <td>
+                            <div class="progressbar">
+                                <div class="indicator" style="width: 90%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
                         <th><span class="tooltip">SQL<span class="ttpopup">Familiar with SQLite.</span></span></th>
                         <td>
                             <div class="progressbar">
@@ -565,8 +563,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">Java<span class="ttpopup">Learned for one semester in
-                                    college.</span></span></th>
+                        <th><span class="tooltip">Java</span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 60%"></div>
@@ -574,8 +571,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">C<span class="ttpopup">Learned for one semester in
-                                    college.</span></span></th>
+                        <th><span class="tooltip">C</span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 40%"></div>
@@ -583,8 +579,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><span class="tooltip">PHP<span class="ttpopup">Learned for one semester in high
-                                    school. I'd use it more, but GitHub Pages doesn't support PHP...</span></span></th>
+                        <th><span class="tooltip">PHP</span></th>
                         <td>
                             <div class="progressbar">
                                 <div class="indicator" style="width: 10%"></div>
@@ -605,18 +600,17 @@
                         <th>MIT App Inventor</th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
+                                <div class="indicator" style="width: 80%"></div>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <span class="tooltip">x86-64 Assembly<span class="ttpopup">Learned for one semester in
-                                    college.</span></span>
+                            <span class="tooltip">x86-64 Assembly</span>
                         </th>
                         <td>
                             <div class="progressbar">
-                                <div class="indicator" style="width: 30%"></div>
+                                <div class="indicator" style="width: 20%"></div>
                             </div>
                         </td>
                     </tr>

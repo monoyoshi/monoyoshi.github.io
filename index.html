@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="global-assets/pictures/favicon.png">
+    <link rel="icon" type="image/png" href="global-assets/images/favicon.png">
     <title>home | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="global-assets/css/fonts.css">
 
     <link rel="stylesheet" href="global-assets/css/style.css">
+    <link rel="stylesheet" href="global-assets/css/dust.css">
+    <link rel="stylesheet" href="global-assets/css/cursor.css">
 
     <!-- local -->
-    <link rel="stylesheet" href="global-assets/css/dust.css">
     <link rel="stylesheet" href="global-assets/css/textadventure.css">
 
     <!-- scripts -->
@@ -25,6 +26,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="global-assets/javascript/boilerplate.js"></script>
+    <script src="global-assets/javascript/dust.js"></script>
+    <script src="global-assets/javascript/cursor.js"></script>
+
+    <!-- local -->
+    <script src="javascript/index.js"></script>
+    
     <script>
         // insert header and footer
         $(document).ready(function () {
@@ -33,35 +40,31 @@
         });
     </script>
 
-    <!-- local -->
-    <script src="global-assets/javascript/dust.js"></script>
-
-    <script src="javascript/index.js"></script>
-
 </head>
 
 <body>
+    <div id="tap"></div>
+    <div id="drag"></div>
+
     <header></header>
 
     <article>
         <div class="flexbox center">
             <div id="lhs" class="frame" style="width: 45%;">
-                <img src="global-assets/pictures/placeholder/drgl-5.png" alt="welcome">
+                <img src="global-assets/images/placeholder/drgl-5.png" alt="welcome">
             </div>
-            <div id="rhs" style="width: 55%;">
+            <div id="rhs" style="width: 55%; overflow-y: scroll;">
                 <div id="gametext" class="textbox">
                     <span class="h1" id="typed">monoyoshi.github.io</span>
-                    <div id="gamehistory">
-                        <p>Yo! The name's <b>kyu(ren)</b>, and welcome to my funny website!!</p>
-                    </div>
+                    <div id="gamehistory"><p></p></div>
                     <div id="choices">
-                        <button class="active" id="0">Yo.</button>
-                        <button class="active" id="1">Hey there!</button>
-                        <button id="2">H-hello...</button>
+                        <button class="indexgame active" id="0">Yo.</button>
+                        <button class="indexgame active" id="1">Heyas!</button>
                     </div>
                 </div>
             </div>
         </div>
+
     </article>
 
     <footer></footer>

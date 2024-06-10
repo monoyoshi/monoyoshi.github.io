@@ -30,7 +30,7 @@ Intel Core i7-8550U CPU
 
 ## ⚡ Fun fact: ...
 
-I really do look like Jun Sazanami from Ensemble Stars.
+I love Dragalia Lost.
 
 <!--
 **monoyoshi/monoyoshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

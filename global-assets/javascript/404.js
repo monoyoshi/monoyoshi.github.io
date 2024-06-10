@@ -2,7 +2,15 @@
 // I wanna have a 404 page I can easily update through one file
 // especially since it's static across all projects
 
-function articlefof() {
+function articlefof(offset = 0) {
+    // offset = how many...directories(?) are needed to reach the root directory
+    let i = 0; // count
+    let jump = ""; // extender
+    while (i < offset) {
+        jump += "../";
+        ++i;
+    };
+
     $("article").append($("<div>", {
         class: "flexbox"
     })
@@ -34,8 +42,8 @@ function articlefof() {
             }
         })
             .append($("<img>", {
-                src: `global-assets/pictures/404.gif`,
-                alt: "get 404'd idiot"
+                src: `${jump}global-assets/images/404.gif`,
+                alt: "get 404'd idiot (if the image doesn't load then maybe I'm the idiot here)"
             }))
         )
     );

@@ -2,28 +2,30 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="global-assets/pictures/favicon.png">
+    <link rel="icon" type="image/png" href="global-assets/images/favicon.png">
     <title>my hyperfixation corner (projects) | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
     <!-- global -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=RocknRoll+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="global-assets/css/colors.css">
     <link rel="stylesheet" href="global-assets/css/fonts.css">
 
     <link rel="stylesheet" href="global-assets/css/style.css">
-
-    <!-- local -->
     <link rel="stylesheet" href="global-assets/css/dust.css">
+    <link rel="stylesheet" href="global-assets/css/cursor.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="global-assets/javascript/boilerplate.js"></script>
+    <script src="global-assets/javascript/dust.js"></script>
+    <script src="global-assets/javascript/cursor.js"></script>
+
     <script>
         // insert header and footer
         $(document).ready(function () {
@@ -31,16 +33,16 @@
             footer(0);
         });
     </script>
-
-    <!-- local -->
-    <script src="global-assets/javascript/dust.js"></script>
-
 </head>
 
 <body>
+    <div id="tap"></div>
+    <div id="drag"></div>
+
     <header></header>
 
     <article>
+
         <div class="textbox">
             <div class="h1">Welcome to the Hyperfixation Corner</div>
         </div>
@@ -50,8 +52,8 @@
                 <div class="h1">hotaru(n)</div>
                 <div class="quote">"hahahahaha"</div>
                 <div class="flexbox">
-                    <!--a href="hotarun" class="button">Main page</a-->
-                    <a href="https://github.com/monoyoshi/hotarun" target="_blank" class="button">GitHub repository</a>
+                    <!--a href="hotarun" target="_blank" rel="noopener noreferrer" class="button">Main page</a-->
+                    <a href="https://github.com/monoyoshi/hotarun" target="_blank" rel="noopener noreferrer" class="button">GitHub repository</a>
                 </div>
                 <p>
                     A Discord bot that does a lot, from unserious things like laughing at people, to serious things like
@@ -63,13 +65,13 @@
                     Discord.js to interact with Discord's API. And no, you can't add him onto your server <i>yet</i>
                     (he's only hosted locally).
                 </p>
-                <!--p>
+                <!-- not yet AHAHAHA p>
                     Oh, and the pages here double as a cooler, flashier, and more concise version of the
                     <code>help</code> command.
                 </p-->
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="hotarun/docs/assets/profilepicture.png" alt="portrait">
+                <img src="hotarun/assets/profilepicture.png" alt="portrait of hotaru(n). if this image doesn't load, it's normal (I can never get it to load)">
             </div>
         </div>
 
@@ -80,41 +82,24 @@
                 <div class="h1">dragalia menu background thingy</div>
                 <div class="quote">"flying balls html"</div>
                 <div class="flexbox">
-                    <a href="dusty" class="button">Main page</a>
-                    <a href="https://github.com/monoyoshi/dusty" target="_blank" class="button">GitHub repository</a>
+                    <a href="dusty" target="_blank" rel="noopener noreferrer" class="button">Main page</a>
+                    <a href="https://github.com/monoyoshi/dusty" target="_blank" rel="noopener noreferrer" class="button">GitHub repository</a>
                 </div>
                 <p>
                     I wanted to make this one effect (the funny floating circles you see in the background here and in
                     other pages), but then I kinda got off track and... well, here it is. There's even a user interface
                     so you can change the effect yourself, I guess.
                 </p>
+                <p>
+                    Oh! Also, the cursor effect is on here too. So much balls!
+                </p>
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="global-assets/pictures/placeholder/crock.png" alt="dust">
+                <img src="global-assets/images/placeholder/crock.png" alt="dust">
             </div>
         </div>
 
         <br class="big">
-
-        <!--div class="flexbox">
-            <div class="textbox" style="width: 50%;">
-                <div class="h1">DL Sticker Spampage</div>
-                <div class="quote">"Hello there..." "Together!" "Anything can change!" *pawprint*</div>
-                <div class="flexbox">
-                    <a href="sticker" class="button">Main page</a>
-                    <a href="https://github.com/monoyoshi/sticker" target="_blank" class="button">GitHub repository</a>
-                </div>
-                <p>
-                    My own version of a Dragalia Lost sticker soundboard! Currently only supports English images with
-                    Japanese audio. This is basically the <code>sticker</code> command in hotaru(n).
-                </p>
-            </div>
-            <div class="frame" style="width: 50%;">
-                <img src="global-assets/pictures/placeholder/junkun-sticker.png" alt="oissu">
-            </div>
-        </div>
-
-        <br class="big"-->
 
         <div class="flexbox">
             <div class="textbox" style="width: 50%;">
@@ -124,8 +109,8 @@
                     「０ｑｄｆｄ０ふぉｊｈｈ￥ｇｆ／ｚ！」
                 </div>
                 <div class="flexbox">
-                    <a href="surtranslate" class="button">Main page</a>
-                    <a href="https://github.com/monoyoshi/surtranslate" target="_blank" class="button">
+                    <a href="surtranslate" target="_blank" rel="noopener noreferrer" class="button">Main page</a>
+                    <a href="https://github.com/monoyoshi/surtranslate" target="_blank" rel="noopener noreferrer" class="button">
                         GitHub repository
                     </a>
                 </div>
@@ -136,7 +121,7 @@
                 </p>
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="global-assets/pictures/placeholder/zodiloaf.png" alt="loaf">
+                <img src="global-assets/images/placeholder/zodiloaf.png" alt="loaf">
             </div>
         </div>
 
@@ -147,41 +132,19 @@
                 <div class="h1">Project DROCSI</div>
                 <div class="quote">"who up ren-posting"</div>
                 <div class="flexbox">
-                    <a href="drocsi" class="button">Main page</a>
-                    <a href="https://github.com/monoyoshi/drocsi" target="_blank" class="button">GitHub repository</a>
+                    <a href="drocsi" target="_blank" rel="noopener noreferrer" class="button">Main page</a>
+                    <a href="https://github.com/monoyoshi/drocsi" target="_blank" rel="noopener noreferrer" class="button">GitHub repository</a>
                 </div>
                 <p>
-                    A whole subset of pages dedicated to Project Dragalia Lost Original Character Self-Insert, or
-                    Project DROCSI.
+                    A bunch of pages dedicated to Project Dragalia Lost Original Character Self-Insert, or Project
+                    DROCSI.
                 </p>
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="global-assets/pictures/placeholder/drgl-5.png" alt="fun">
+                <img src="global-assets/images/placeholder/drgl-5.png" alt="fun">
             </div>
         </div>
 
-        <!--br class="big">
-
-        <div class="flexbox">
-            <div class="textbox" style="width: 50%;">
-                <div class="h1">Dragalia Life Archive v9</div>
-                <div class="quote">"I can't believe Dragalia Life is dead!"</div>
-                <div class="flexbox">
-                    <a href="dragalife" class="button">Main page</a>
-                    <a href="https://github.com/monoyoshi/dragalife" target="_blank" class="button">
-                        GitHub repository
-                    </a>
-                </div>
-                <p>
-                    Yet another Dragalia Life archive. Nothing special for now, I just needed another place to look up
-                    the comics again, similar to the (now gone) official website. The v9 is just a name choice. I like
-                    the number 9, if you couldn't tell.
-                </p>
-            </div>
-            <div class="frame" style="width: 50%;">
-                <img src="global-assets/pictures/placeholder/miku.png" alt="miku">
-            </div>
-        </div-->
     </article>
 
     <footer></footer>
