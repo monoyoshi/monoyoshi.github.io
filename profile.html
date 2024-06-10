@@ -36,6 +36,7 @@
         $(document).ready(function () {
             header(0, "profile");
             footer(0);
+
             $("#age").text(ageCalc("07/30/2000") + 4000);
             setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
         });
@@ -51,7 +52,7 @@
     <article>
         <div class="flexbox">
             <div class="frame" style="width: 40%; margin: 0;">
-                <img src="global-assets/images/placeholder/junkun.png" alt="self-portrait" style="margin: 0;">
+                <img src="global-assets/images/placeholder/junkun.png" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="margin: 0;">
             </div>
             <div class="flexbox center" style="width: 60%;">
                 <div style="width: 65%;">
@@ -164,7 +165,7 @@
                                 Hyperfixation<br>
                                 <span class="tooltip">
                                     Making banana bread
-                                    <span class="ttpopup">Really, <!--a href="recipes/banana-bread.html"-->it's good<!--/a-->!</span>
+                                    <span class="ttpopup">Really, <a>it's good</a>!</span>
                                 </span><br>
                                  
                             </td>
@@ -179,7 +180,7 @@
         <div class="flexbox">
             <div class="textbox" style="width: 50%;">
                 <div class="h1">Interests</div>
-                <!--div class="note">See also: <a>The Lists™</a></div-->
+                <div class="note">See also: <a>The Lists™</a></div>
                 <p>I like lots of stuff. Listed below are my current core hyperfixations.</p>
                 <ul>
                     <li><b>Dragalia Lost</b></li>

@@ -5,7 +5,6 @@ $(document).ready(function() {
     let $gameHistory = $("#gamehistory");
     let $choices = $("#choices");
 
-
     let $buttonZero = $("#0");
     let $buttonOne = $("#1");
 
@@ -69,13 +68,11 @@ $(document).ready(function() {
             $gameHistory
                 .empty()
                 .append($("<p>"));
-        }
+        };
     }
     
     $lhs.css("max-height", mh);
     $rhs.css("max-height", mh);
-
-
 
     // game
     $buttonZero.on("click", function() {

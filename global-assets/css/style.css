@@ -214,8 +214,8 @@ table.transparent td {
 .footer-box {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
     right: 0;
-    bottom: 0;
     color: var(--lgray);
     opacity: 0.3;
     transition-duration: 500ms;
