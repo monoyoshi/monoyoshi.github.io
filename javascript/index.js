@@ -111,7 +111,7 @@ $(document).ready(function() {
         else if (section == 4) {
             makeChoice(
                 ["Sure!", "What kinds of things do you have?", "Actually, who ARE you?"],
-                ["Oh right, I forgot to introduce myself.", `The name's <a href="profile.html" target="_blank" rel="noopener noreferrer">kyu(ren)</a>. You can call me Kyu, for short.`, "I guess you could say I'm an artist, a programmer, and overall a really cool guy."],
+                ["Oh right, I forgot to introduce myself.", `The name's <a href="profile.html" target="_blank" rel="noopener noreferrer">kyu(ren)</a>. You can call me Kyu, for short. The lowercase is important!`, "I guess you could say I'm an artist, a programmer, and overall a really cool guy."],
                 ["Nice to meet you!"],
                 5
             );
@@ -234,7 +234,7 @@ $(document).ready(function() {
         else if (section == 3) {
             makeChoice(
                 ["...Hold on. Are you THE Kyu?"],
-                ["Oh! Yeah, that's me.", "The name's kyu(ren), Kyu for short. The lowercase is important!", "Anyway, what's up?"],
+                ["Oh! Yeah, that's me.", `The name's <a href="profile.html" target="_blank" rel="noopener noreferrer">kyu(ren)</a>, Kyu for short. The lowercase is important!`, "Anyway, what's up?"],
                 ["Amazing..."],
                 12
             );
