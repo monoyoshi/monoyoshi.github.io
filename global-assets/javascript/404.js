@@ -2,15 +2,7 @@
 // I wanna have a 404 page I can easily update through one file
 // especially since it's static across all projects
 
-function articlefof(offset = 0) {
-    // offset = how many...directories(?) are needed to reach the root directory
-    let i = 0; // count
-    let jump = ""; // extender
-    while (i < offset) {
-        jump += "../";
-        ++i;
-    };
-
+function articlefof() {
     $("article").append($("<div>", {
         class: "flexbox"
     })

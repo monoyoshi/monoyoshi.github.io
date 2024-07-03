@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="global-assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
     <title>profile | bladewyrm.dev</title>
 
     <!-- stylesheets -->
@@ -11,20 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="global-assets/css/colors.css">
-    <link rel="stylesheet" href="global-assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
 
-    <link rel="stylesheet" href="global-assets/css/style.css">
-    <link rel="stylesheet" href="global-assets/css/dust.css">
-    <link rel="stylesheet" href="global-assets/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/dust.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="global-assets/javascript/boilerplate.js"></script>
-    <script src="global-assets/javascript/dust.js"></script>
-    <script src="global-assets/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/dust.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
 
     <!-- local -->
     <script src="javascript/agecalc.js"></script>
@@ -34,8 +34,8 @@
         // insert header and footer
         // calculate age, current time on load
         $(document).ready(function () {
-            header(0, "profile");
-            footer(0);
+            header("profile");
+            footer();
 
             $("#age").text(ageCalc("07/30/2000") + 4000);
             setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
@@ -49,10 +49,10 @@
 
     <header></header>
 
-    <article>
+    <main>
         <div class="flexbox">
             <div class="frame" style="width: 40%; margin: 0;">
-                <img src="global-assets/images/placeholder/junkun.png" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="margin: 0;">
+                <img src="https://cdn.bladewyrm.dev/global/images/placeholder/junkun.png" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="margin: 0;">
             </div>
             <div class="flexbox center" style="width: 60%;">
                 <div style="width: 65%;">
@@ -77,7 +77,7 @@
                                 Kyu<br>
                                 <span class="tooltip">Q<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
                                 <span class="tooltip">9<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
-                                <a href="drocsi/ren">Ren</a><br>
+                                <a href="https://drocsi.bladewyrm.dev/ren">Ren</a><br>
                                 Marth<br>
                                 Pika(hardt)<br>
                                 Senpai<br>
@@ -193,7 +193,7 @@
                 </ul>
             </div>
             <div class="frame" style="width: 50%;">
-                <img src="global-assets/images/placeholder/miku.png" alt="funny">
+                <img src="https://cdn.bladewyrm.dev/global/images/placeholder/miku.png" alt="funny">
             </div>
         </div>
 
@@ -799,7 +799,7 @@
                 </table>
             </div>
         </div>
-    </article>
+    </main>
 
     <footer></footer>
 

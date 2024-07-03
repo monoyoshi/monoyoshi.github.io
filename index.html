@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="global-assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
     <title>home | bladewyrm.dev</title>
 
     <!-- stylesheets -->
@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="global-assets/css/colors.css">
-    <link rel="stylesheet" href="global-assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
 
-    <link rel="stylesheet" href="global-assets/css/style.css">
-    <link rel="stylesheet" href="global-assets/css/dust.css">
-    <link rel="stylesheet" href="global-assets/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/dust.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
 
     <!-- local -->
     <link rel="stylesheet" href="css/textadventure.css">
@@ -25,9 +25,9 @@
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="global-assets/javascript/boilerplate.js"></script>
-    <script src="global-assets/javascript/dust.js"></script>
-    <script src="global-assets/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/dust.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
 
     <!-- local -->
     <script src="javascript/index.js"></script>
@@ -35,8 +35,8 @@
     <script>
         // insert header and footer
         $(document).ready(function () {
-            header(0, "index");
-            footer(0);
+            header("index");
+            footer();
         });
     </script>
 </head>
@@ -47,14 +47,14 @@
 
     <header></header>
 
-    <article>
+    <main>
         <div class="flexbox center">
             <div id="lhs" class="frame" style="width: 45%;">
-                <img src="global-assets/images/placeholder/drgl-5.png" alt="welcome">
+                <img src="https://cdn.bladewyrm.dev/global/images/placeholder/drgl-5.png" alt="welcome">
             </div>
             <div id="rhs" style="width: 55%; overflow-y: scroll;">
                 <div id="gametext" class="textbox">
-                    <span class="h1">bladewyrm.dev</span>
+                    <span class="h1">you have entered the domain of the bladewyrm...</span>
                     <div id="gamehistory"><p></p></div>
                     <div id="choices">
                         <button class="indexgame active" id="0">Yo.</button>
@@ -63,8 +63,7 @@
                 </div>
             </div>
         </div>
-
-    </article>
+    </main>
 
     <footer></footer>
 
