@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    let $lhs = $("#lhs");
     let $rhs = $("#rhs");
 
     let $gameHistory = $("#gamehistory");
@@ -8,11 +7,40 @@ $(document).ready(function() {
     let $buttonZero = $("#0");
     let $buttonOne = $("#1");
 
-    let mh = $lhs.css("height");
-
     let section = 0;
 
+    function textType(target, txts, i = 0, j = 0, finished = function() {return undefined;}) {
+        target.append(txts[i][j]);
+        ++j;
+
+        if (j < txts[i].length) {
+            if (txts[i][j-1] == "." || txts[i][j-1] == "," || txts[i][j-1] == "!" || txts[i][j-1] == "?") {
+                setTimeout(() => {
+                    textType(target, txts, i, j, finished);
+                }, 180);
+            }
+            else {
+                setTimeout(() => {
+                    textType(target, txts, i, j, finished);
+                }, 9);
+            }
+        }
+        else {
+            if (txts.length > 1 && i < txts.length-1) {
+                target.append("<br>");
+                setTimeout(() => {
+                    textType(target, txts, i+1, 0, finished);
+                }, 450);
+            };
+        };
+
+        if (i >= txts.length-1 && j >= txts[i].length) setTimeout(finished, 360)
+    };
+
+    textType($("#title"), ["> You have entered the domain of the Bladewyrm..."], 0, 0, () => {$("button.indexgame").addClass("active")});
+
     function makeChoice(answer = [], next = [], choices = [], sectionJump = 0) {
+        $("button.indexgame.active").removeClass("active");
         let $answer = $("<div>", {
             class: "flexbox",
             css: {
@@ -26,53 +54,48 @@ $(document).ready(function() {
             })
                 .html("<b>You</b>:")
         );
-        
-        let i = 0;
+
         let $theAnswer = $("<div>");
-        while (i < answer.length) {
-            $answer.append(`${answer[i]}<br>`)
-            ++i;
-        };
         $theAnswer.append($answer);
         $gameHistory.append($theAnswer);
+        $gameHistory.append("<br>");
+        setTimeout(() => {textType($answer, answer, 0, 0, () => {
 
-        i = 0;
-        while (i < next.length) {
-            $gameHistory.append(`<p>${next[i]}</p>`);
-            ++i;
-        };
+            $(document).scrollTop($(document).height());
 
-        if (choices.length != 0) {
-            i = 0;
-            while (i < choices.length) {
-                $choices.children().eq(i).addClass("active");
-                $choices.children().eq(i).text(choices[i]);
-                ++i;
-            };
-            while (i < $choices.children().length) {
-                $choices.children().eq(i).removeClass("active");
-                $choices.children().eq(i).text("");
-                ++i;
-            };
-        }
-        else {
-            $choices.css("display", "none");
-        }
+            textType($gameHistory, next, 0, 0, () => {
+                
+                $(document).scrollTop($(document).height());
+
+                $gameHistory.append("<br><br>");
+                if (choices.length != 0) {
+                    let i = 0;
+                    while (i < choices.length) {
+                        $choices.children().eq(i).addClass("active");
+                        $choices.children().eq(i).text(choices[i]);
+                        ++i;
+                    };
+                    while (i < $choices.children().length) {
+                        $choices.children().eq(i).removeClass("active");
+                        $choices.children().eq(i).text("");
+                        ++i;
+                    };
+                }
+                else {
+                    $choices.css("display", "none");
+                }
+        })})}, 270);
 
         $("button").on("click", function() {
-            $rhs.scrollTop($("#gametext").height());
+            $(document).scrollTop($(document).height());
         });
 
         section = sectionJump;
         if (section == 0) {
             $gameHistory
-                .empty()
-                .append($("<p>"));
+                .empty();
         };
     }
-    
-    $lhs.css("max-height", mh);
-    $rhs.css("max-height", mh);
 
     // game
     $buttonZero.on("click", function() {
@@ -111,7 +134,7 @@ $(document).ready(function() {
         else if (section == 4) {
             makeChoice(
                 ["Sure!", "What kinds of things do you have?", "Actually, who ARE you?"],
-                ["Oh right, I forgot to introduce myself.", `The name's <a href="profile.html" target="_blank" rel="noopener noreferrer">kyu(ren)</a>. You can call me Kyu, for short. The lowercase is important!`, "I guess you could say I'm an artist, a programmer, and overall a really cool guy."],
+                ["Oh right, I forgot to introduce myself.", `The name's kyu(ren). You can call me Kyu, for short.`, "I guess you could say I'm an artist, a programmer, and overall a really cool guy."],
                 ["Nice to meet you!"],
                 5
             );
@@ -119,7 +142,7 @@ $(document).ready(function() {
         else if (section == 5) {
             makeChoice(
                 ["Nice to meet you, Kyu!", "You do seem pretty cool."],
-                ["Really? Thank you!", `Anyway, if you check out <a href="projects.html" target="_blank" rel="noopener noreferrer">this link</a>, you can see all my published works.`, "There's a lot of fun stuff in there—maybe you'll find something interesting?"],
+                ["Really? Thank you!", `Anyway, if you check out the projects link down there, you can see all my public stuff.`, "There's a lot of fun stuff in there—maybe you'll find something interesting?"],
                 ["Thank you!"],
                 6
             );
@@ -151,7 +174,7 @@ $(document).ready(function() {
         else if (section == 9) {
             makeChoice(
                 ["Really? Where can I find it?"],
-                [`If you follow <a href="projects.html" target="_blank" rel="noopener noreferrer">this link</a>, you'll see my stuff.`],
+                [`If you follow the projects link down there, you'll see my stuff.`],
                 ["Thank you!"],
                 6
             );
@@ -183,7 +206,7 @@ $(document).ready(function() {
         else if (section == 13) {
             makeChoice(
                 ["That's so cool... Where can I find more?"],
-                ["Oh!", `If you wanna check out other cool stuff, check <a href="projects.html" target="_blank" rel="noopener noreferrer">this link</a> out!`],
+                ["Oh!", `If you wanna check out other cool stuff, check out the projects link down there!`],
                 ["Okay!"],
                 10
             );
@@ -191,7 +214,7 @@ $(document).ready(function() {
         else if (section == 15) {
             makeChoice(
                 ["Hold on. You did that?", "That's so cool! Do you have anything else?"],
-                ["Heh, I got quite a bit. I'm always cooking too, so I'll get more in time.", `Anyway, if you follow <a href="projects.html" target="_blank" rel="noopener noreferrer">this link</a>, you can see other cool stuff that I've made.`, "I mean, even this website was all made by me. Cool, right?"],
+                ["Heh, I got quite a bit. I'm always cooking too, so I'll get more in time.", `Anyway, if you follow the projects link down there, you can see other cool stuff that I've made.`, "I mean, even this website was all made by me. Cool, right?"],
                 ["It really is."],
                 16
             );

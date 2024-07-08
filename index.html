@@ -3,7 +3,7 @@
 
 <head>
     <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
-    <title>home | bladewyrm.dev</title>
+    <title>welcome! | bladewyrm.dev</title>
 
     <!-- stylesheets -->
     <!-- global -->
@@ -48,18 +48,13 @@
     <header></header>
 
     <main>
-        <div class="flexbox center">
-            <div id="lhs" class="frame" style="width: 45%;">
-                <img src="https://cdn.bladewyrm.dev/global/images/placeholder/drgl-5.png" alt="welcome">
-            </div>
-            <div id="rhs" style="width: 55%; overflow-y: scroll;">
-                <div id="gametext" class="textbox">
-                    <span class="h1">you have entered the domain of the bladewyrm...</span>
-                    <div id="gamehistory"><p></p></div>
-                    <div id="choices">
-                        <button class="indexgame active" id="0">Yo.</button>
-                        <button class="indexgame active" id="1">Heyas!</button>
-                    </div>
+        <div class="flexbox">
+            <div id="gametext" class="textbox">
+                <span class="h1" id="title"></span>
+                <div id="gamehistory"><br></div>
+                <div id="choices">
+                    <button class="indexgame" id="0">Yo.</button>
+                    <button class="indexgame" id="1">Heyas!</button>
                 </div>
             </div>
         </div>

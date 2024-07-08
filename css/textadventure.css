@@ -6,19 +6,20 @@
 
 #choices>button {
     display: none;
+    transition-duration: 1000ms;
 }
 
 #choices>button.active {
     display: inline-block;
+    animation-name: reveal;
+    animation-duration: 500ms;
 }
 
 @keyframes reveal {
     0% {
-        left: -100%;
         opacity: 0;
     }
     100% {
-        left: 0;
         opacity: 1;
     }
 }
