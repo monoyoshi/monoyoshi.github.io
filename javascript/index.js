@@ -9,23 +9,45 @@ $(document).ready(function() {
 
     let section = 0;
 
+    function jumpDown() {
+        $(document).scrollTop($(document).height());
+    }
+
     function textType(target, txts, i = 0, j = 0, finished = function() {return undefined;}) {
         target.append(txts[i][j]);
         ++j;
 
         if (j < txts[i].length) {
-            if (txts[i][j-1] == "." || txts[i][j-1] == "," || txts[i][j-1] == "!" || txts[i][j-1] == "?") {
-                setTimeout(() => {
-                    textType(target, txts, i, j, finished);
-                }, 180);
-            }
-            else {
-                setTimeout(() => {
-                    textType(target, txts, i, j, finished);
-                }, 9);
+            switch (txts[i][j-1]) {
+                case " ": {
+                    setTimeout(() => {
+                        textType(target, txts, i, j, finished);
+                    }, 45);
+                    break;
+                }
+                case ",": {
+                    setTimeout(() => {
+                        textType(target, txts, i, j, finished);
+                    }, 180);
+                    break;
+                }
+                case ".":
+                case "!":
+                case "?":
+                case "—": {
+                    setTimeout(() => {
+                        textType(target, txts, i, j, finished);
+                    }, 270);
+                    break;
+                };
+                default:
+                    setTimeout(() => {
+                        textType(target, txts, i, j, finished);
+                    }, 18);
             }
         }
         else {
+            jumpDown();
             if (txts.length > 1 && i < txts.length-1) {
                 target.append("<br>");
                 setTimeout(() => {
@@ -37,10 +59,28 @@ $(document).ready(function() {
         if (i >= txts.length-1 && j >= txts[i].length) setTimeout(finished, 360)
     };
 
-    textType($("#title"), ["> You have entered the domain of the Bladewyrm..."], 0, 0, () => {$("button.indexgame").addClass("active")});
+    function choiceSet(choices) {
+        if (choices.length != 0) {
+            let i = 0;
+            while (i < choices.length) {
+                $choices.children().eq(i).addClass("active");
+                $choices.children().eq(i).text(choices[i]);
+                ++i;
+            };
+            while (i < $choices.children().length) {
+                $choices.children().eq(i).removeClass("active");
+                $choices.children().eq(i).text("");
+                ++i;
+            };
+        }
+        else {
+            $choices.css("display", "none");
+        };
+    }
 
     function makeChoice(answer = [], next = [], choices = [], sectionJump = 0) {
         $("button.indexgame.active").removeClass("active");
+
         let $answer = $("<div>", {
             class: "flexbox",
             css: {
@@ -55,47 +95,29 @@ $(document).ready(function() {
                 .html("<b>You</b>:")
         );
 
-        let $theAnswer = $("<div>");
-        $theAnswer.append($answer);
-        $gameHistory.append($theAnswer);
+        $gameHistory.append($answer);
         $gameHistory.append("<br>");
+
         setTimeout(() => {textType($answer, answer, 0, 0, () => {
-
-            $(document).scrollTop($(document).height());
-
             textType($gameHistory, next, 0, 0, () => {
-                
-                $(document).scrollTop($(document).height());
+                if (sectionJump == 0) $gameHistory.append("<br>");
+                else $gameHistory.append("<br><br>");
 
-                $gameHistory.append("<br><br>");
-                if (choices.length != 0) {
-                    let i = 0;
-                    while (i < choices.length) {
-                        $choices.children().eq(i).addClass("active");
-                        $choices.children().eq(i).text(choices[i]);
-                        ++i;
-                    };
-                    while (i < $choices.children().length) {
-                        $choices.children().eq(i).removeClass("active");
-                        $choices.children().eq(i).text("");
-                        ++i;
-                    };
-                }
-                else {
-                    $choices.css("display", "none");
-                }
+                choiceSet(choices);
         })})}, 270);
 
-        $("button").on("click", function() {
-            $(document).scrollTop($(document).height());
-        });
+        $("button").on("click", jumpDown);
 
         section = sectionJump;
         if (section == 0) {
-            $gameHistory
-                .empty();
+            $gameHistory.fadeOut(500, function() {
+                $(this).empty();
+                $(this).fadeIn("fast");
+            })
         };
     }
+
+    textType($("#title"), ["> You have entered the domain of the Bladewyrm..."], 0, 0, () => {$("button.indexgame").addClass("active")});
 
     // game
     $buttonZero.on("click", function() {
