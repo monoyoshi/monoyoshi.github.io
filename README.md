@@ -16,19 +16,23 @@ Dragalia Lost.
 
 ## 📫 How to reach me
 
-[@kyu_rem_](https://twitter.com/kyu_rem_) on Twitter.
+[@bladewyrm.dev](https://bsky.app/profile/bladewyrm.dev) on Bluesky.
 
 ## 💻 PC Specs
 
-They/them, he/him, it/its.
+ahhh they/them, he/him, or it/its! thank you!
 
 ## 😄 Pronouns
 
-Intel UHD Graphics 620
+~~Intel UHD Graphics 620 / Intel Core i7-8550U CPU / 16.0 GB RAM~~
 
-Intel Core i7-8550U CPU
+GeForce RTX 4070 Ti Super
 
-## ⚡ Fun fact: ...
+Intel Core i9-12900K CPU
+
+64.0 GB RAM
+
+## ⚡ Fun fact:
 
 I love Dragalia Lost.
 
