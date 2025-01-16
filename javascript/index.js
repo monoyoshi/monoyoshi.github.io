@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    let $rhs = $("#rhs");
-
     let $gameHistory = $("#gamehistory");
     let $choices = $("#choices");
 
@@ -10,7 +8,7 @@ $(document).ready(function() {
     let section = 1;
 
     function jumpDown() {
-        $(document).scrollTop($(document).height());
+        $(".content").scrollTop($gameHistory.height());
     };
 
     function textType(target, txts, i = 0, j = 0, finished = function() {return undefined;}) {
@@ -63,12 +61,14 @@ $(document).ready(function() {
         if (choices.length != 0) {
             let i = 0;
             while (i < choices.length) {
-                $choices.children().eq(i).addClass("active");
+                $choices.children().eq(i).removeClass("notusing");
+                $choices.children().eq(i).addClass("using");
                 $choices.children().eq(i).text(choices[i]);
                 ++i;
             };
             while (i < $choices.children().length) {
-                $choices.children().eq(i).removeClass("active");
+                $choices.children().eq(i).addClass("notusing");
+                $choices.children().eq(i).removeClass("using");
                 $choices.children().eq(i).text("");
                 ++i;
             };
@@ -79,7 +79,8 @@ $(document).ready(function() {
     }
 
     function makeChoice(answer = [], next = [], choices = [], sectionJump = 0) {
-        $("button.indexgame.active").removeClass("active");
+        $("a.button.indexgame.using").addClass("notusing");
+        $("a.button.indexgame.using").removeClass("using");
 
         let $answer = $("<div>", {
             class: "flexbox",
@@ -108,7 +109,7 @@ $(document).ready(function() {
                 choiceSet(choices);
         })})}, 270);
 
-        $("button").on("click", jumpDown);
+        $("a.button.indexgame").on("click", jumpDown);
 
         section = sectionJump;
         if (section == 1) {
@@ -119,7 +120,11 @@ $(document).ready(function() {
         };
     }
 
-    textType($("#title"), ["> You have stumbled upon the domain of the Bladewyrm..."], 0, 0, () => {$("button.indexgame").addClass("active")});
+    textType($("#title"), ["> You have stumbled upon the domain of the Bladewyrm..."], 0, 0, () => {
+        $("a.button.indexgame")
+        .removeClass("notusing")
+        .addClass("using")
+    });
 
     // game
     $buttonZero.on("click", function() {
