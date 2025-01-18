@@ -1,28 +1,14 @@
-.content {
-    scroll-behavior: smooth;
-}
-
-#gamehistory {
-    width: 100%;
-    height: 100%;
-}
-
 #gamehistory > * {
     animation-name: reveal;
     animation-duration: 500ms;
-    position: relative;
 }
 
-a.button.indexgame {
-    transition-duration: 1000ms;
-}
-
-a.button.indexgame.notusing {
+#choices>a.button.notusing {
     display: none;
 }
 
-a.button.indexgame.using {
-    display: flex;
+#choices>a.button.using {
+    display: inline-block;
     animation-name: reveal;
     animation-duration: 500ms;
 }
@@ -33,11 +19,5 @@ a.button.indexgame.using {
     }
     100% {
         opacity: 1;
-    }
-}
-
-@media only screen and (max-aspect-ratio: 1) {
-    .card > .actions {
-        height: 14rem;
     }
 }
