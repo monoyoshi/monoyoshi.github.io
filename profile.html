@@ -30,8 +30,8 @@
     <script src="https://cdn.bladewyrm.dev/global/javascript/dust.js"></script>
 
     <!-- local -->
-    <!--script src="javascript/agecalc.js"></script>
-    <script src="javascript/timecalc.js"></script-->
+    <script src="javascript/agecalc.js"></script>
+    <script src="javascript/timecalc.js"></script>
 
     <script>
         // insert header and footer
@@ -40,8 +40,8 @@
             header("profile");
             footer();
 
-            // $("#age").text(ageCalc("07/30/2000")+4000);
-            // setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
+            $("#age").text(ageCalc("07/30/2000")+4000);
+            setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
         });
     </script>
 </head>
@@ -52,130 +52,138 @@
     <header></header>
 
     <main>
-        there's nothing here... (i am working on it)
-        <!-- this is for another day div class="flexbox">
-            <div class="frame" style="width: 40%; margin: 0;">
-                <img src="https://cdn.bladewyrm.dev/global/images/placeholder/junkun.png" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="margin: 0;">
-            </div>
-            <div class="flexbox center" style="width: 60%;">
-                <div style="width: 65%;">
-                    <div class="textbox">
+        <div class="card">
+            <div class="header">profile</div>
+
+            <div class="content">
+                <div class="row">
+                    <div class="column-40" style="display: flex; align-items: center; justify-content: center; height: 700px;">
+                        <img src="https://cdn.bladewyrm.dev/global/images/placeholder/junkun.png" width="75%" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="margin: 0;">
+                    </div>
+                    <div class="column-55">
                         <div class="h2">Sword Enthusiast</div>
                         <div class="h1">kyu(ren)</div>
                         <div class="quote">"I'm like <s>the</s> joker but non-binary."</div>
                         <p>
                             Some guy who lives in the void and has a lot of free time, supposedly. They are passionate
-                            in their interests, which include swords, dragons, dogs, cats, tea-making, coffee-making, baking,
+                            in their interests, which include swords, dragons, dogs, tea-making, coffee-making, baking,
                             and a certain kind of anime character. They are usually found playing games, drawing, being a
                             hackerman (programming), or just plain vibing.
                         </p>
                         <br>
                         <div class="h1">Profile</div>
+                        <table class="transparent" style="margin: auto 15px;">
+                            <tr>
+                                <th>Aliases</th>
+                                <td>
+                                    Kyu<br>
+                                    <span class="tooltip">Q<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
+                                    <span class="tooltip">9<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
+                                    <a href="https://drocsi.bladewyrm.dev/ren">Ren</a><br>
+                                    Marth<br>
+                                    Pika(hardt)<br>
+                                    Senpai<br>
+                                    Balls
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                            </tr>
+                            <tr>
+                                <th>Species</th>
+                                <td>Dragon(?)</td>
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <td>??? / Gender unknown</td>
+                            </tr>
+                            <tr>
+                                <th>Pronouns</th>
+                                <td>
+                                    They/them<br>
+                                    He/him<br>
+                                    It/its
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Birthday</th>
+                                <td>July 30, 2000 BC (Leo; age ~<span id="age">????</span>)</td>
+                            </tr>
+                            <tr>
+                                <th>Residence</th>
+                                <td>"The void"</td>
+                            </tr>
+                            <tr>
+                                <th>Timezone</th>
+                                <td>
+                                    <span class="tooltip">
+                                        Central Time (UTC-5/UTC-6)
+                                        <span class="ttpopup"id="currenttime">Current time: ????/??/?? ??:??:?? UTC??</span>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                            </tr>
+                            <tr>
+                                <th>Likes</th>
+                                <td>
+                                    Swords<br>
+                                    Dragons
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Dislikes</th>
+                                <td>
+                                    Snowy/icy winters<br>
+                                    Loud noises
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Favorite food</th>
+                                <td>
+                                    Bread<br>
+                                    <span class="tooltip">
+                                        Fruit
+                                        <span class="ttpopup">Favorite fruits: dragonfruit, blueberries, strawberries</span>
+                                    </span><br>
+                                    Cheese<br>
+                                    Tea
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Hobbies</th>
+                                <td>
+                                    Vibing<br>
+                                    Gaming<br>
+                                    Drawing<br>
+                                    Programming
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Special skills</th>
+                                <td>
+                                    Being a funny, silly, goofy guy<br>
+                                    Hyperfixation<br>
+                                    <span class="tooltip">
+                                        Making banana bread
+                                        <span class="ttpopup">Really, <a href="https://tou-cafe.bladewyrm.dev/banana-bread.html">it's good</a>!</span>
+                                    </span><br>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <table class="transparent" style="margin: auto 15px;">
-                        <tr>
-                            <th>Aliases</th>
-                            <td>
-                                Kyu<br>
-                                <span class="tooltip">Q<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
-                                <span class="tooltip">9<span class="ttpopup">Pronounced like "Kyu"</span></span><br>
-                                <a href="https://drocsi.bladewyrm.dev/ren">Ren</a><br>
-                                Marth<br>
-                                Pika(hardt)<br>
-                                Senpai<br>
-                                Balls
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><br></td>
-                        </tr>
-                        <tr>
-                            <th>Species</th>
-                            <td>Dragon(?)</td>
-                        </tr>
-                        <tr>
-                            <th>Gender</th>
-                            <td>??? / Gender unknown</td>
-                        </tr>
-                        <tr>
-                            <th>Pronouns</th>
-                            <td>
-                                They/them<br>
-                                He/him<br>
-                                It/its
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Birthday</th>
-                            <td>July 30, 2000 BC (Leo; age ~<span id="age">????</span>)</td>
-                        </tr>
-                        <tr>
-                            <th>Residence</th>
-                            <td>"The void"</td>
-                        </tr>
-                        <tr>
-                            <th>Timezone</th>
-                            <td>
-                                <span class="tooltip">
-                                    Central Time (UTC-5/UTC-6)
-                                    <span class="ttpopup"id="currenttime">Current time: ????/??/?? ??:??:?? UTC??</span>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><br></td>
-                        </tr>
-                        <tr>
-                            <th>Likes</th>
-                            <td>
-                                Swords<br>
-                                Dragons
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Dislikes</th>
-                            <td>
-                                Snowy/icy winters<br>
-                                Loud noises
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Favorite food</th>
-                            <td>
-                                Bread<br>
-                                <span class="tooltip">
-                                    Fruit
-                                    <span class="ttpopup">Favorite fruits: dragonfruit, blueberries, strawberries</span>
-                                </span><br>
-                                Cheese<br>
-                                Tea
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Hobbies</th>
-                            <td>
-                                Vibing<br>
-                                Gaming<br>
-                                Drawing<br>
-                                Programming
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Special skills</th>
-                            <td>
-                                Being a funny, silly, goofy guy<br>
-                                Hyperfixation<br>
-                                <span class="tooltip">
-                                    Making banana bread
-                                    <span class="ttpopup">Really, <a>it's good</a>!</span>
-                                </span><br>
-                                 
-                            </td>
-                        </tr>
-                    </table>
+                </div>
+                <div class="row">
+
                 </div>
             </div>
+
+            <div class="actions">
+                <a class="button" href="index.html">return home</a>
+            </div>
         </div>
+        <!-- this is for another day div class="flexbox">
 
         <br class="big">
 
