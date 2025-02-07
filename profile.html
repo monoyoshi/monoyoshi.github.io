@@ -40,7 +40,7 @@
             header("profile");
             footer();
 
-            $("#age").text(ageCalc("07/30/2000")+4000);
+            $("#age").text(ageCalc("07/30/2000") + 4000);
             setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
         });
     </script>
@@ -56,11 +56,11 @@
             <div class="header">profile</div>
 
             <div class="content noactions">
-                <div class="row">
-                    <div class="column-40" style="display: flex; align-items: center; justify-content: center;">
-                        <img src="https://cdn.bladewyrm.dev/global/images/placeholder/junkun.png" width="75%" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="margin: 0; max-width: 382px;">
+                <div class="row" style="margin: 10px 0;">
+                    <div class="column-40" style="text-align: center;">
+                        <img src="https://cdn.bladewyrm.dev/global/images/placeholder/junkun.png" width="75%" alt="self-portrait (real) (not clickbait (you can't even click on the picture))">
                     </div>
-                    <div class="column-60">
+                    <div class="column-60" style="margin: 0 10px;">
                         <br class="mobileshow">
                         <div class="h2">Sword Enthusiast</div>
                         <div class="h1">kyu(ren)</div>
@@ -71,9 +71,13 @@
                             and a certain kind of anime character. They are usually found playing games, drawing, being a
                             hackerman (programming), or just plain vibing.
                         </p>
-                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-15"></div>
+                    <div class="column-70">
                         <div class="h1">Profile</div>
-                        <table class="transparent">
+                        <table>
                             <tr>
                                 <th>Aliases</th>
                                 <td>
@@ -85,9 +89,9 @@
                                     Balls
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="tablebreak"><br></td>
-                            </tr>
+                        </table>
+                        <br>
+                        <table>
                             <tr>
                                 <th>Species</th>
                                 <td>Dragon(?)</td>
@@ -121,9 +125,9 @@
                                     </span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="tablebreak"><br></td>
-                            </tr>
+                        </table>    
+                        <br>
+                        <table>
                             <tr>
                                 <th>Likes</th>
                                 <td>
@@ -173,9 +177,7 @@
                         </table>
                         <br>
                     </div>
-                </div>
-                <div class="row">
-
+                    <div class="column-15"></div>
                 </div>
             </div>
         </div>
