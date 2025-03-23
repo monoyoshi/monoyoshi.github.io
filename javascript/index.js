@@ -122,8 +122,8 @@ $(document).ready(function() {
 
     textType($("#title"), ["> You have stumbled upon the domain of the Bladewyrm..."], 0, 0, () => {
         $("a.button.indexgame")
-        .removeClass("notusing")
-        .addClass("using")
+            .removeClass("notusing")
+            .addClass("using")
     });
 
     // game
@@ -139,8 +139,11 @@ $(document).ready(function() {
         else if (section == 1) {
             makeChoice(
                 ["Yo."],
-                ["Oh?", "Yo yo! Welcome to my silly little website!"],
-                ["Thank you!", "I heard there were cool things going on?"],
+                [
+                    "Oh?",
+                    "Yo yo! Welcome to my humble little abode!"
+                ],
+                ["Thank you!", "I heard there was treasure..."],
                 2
             );
         }
@@ -155,31 +158,52 @@ $(document).ready(function() {
         else if (section == 3) {
             makeChoice(
                 ["Doing pretty good, you?"],
-                ["I'm just vibing. It's rare to see anyone else around here, let alone someone I can actually interact with, so I'm happy to have company.", "Actually, what brings you here?"],
-                ["I'm looking for something...", "...Wait. Are you THE Kyu?"],
+                [
+                    "I'm just vibing. It's rare to see anyone else around here, let alone someone I can actually interact with, so I'm happy to have company.",
+                    "Actually, what brings you here?"
+                ],
+                ["Just passing.", "...Wait. Are you THE Bladewyrm?"],
                 4
             );
         }
         else if (section == 4) {
             makeChoice(
-                ["I was told you had some interesting stuff here?"],
-                ["Oh, really?", "I, in fact, DO have cool stuff. Like, a lot. Kinda. You wanna see them?"],
+                ["Nothing in particular. Cool place though!"],
+                [
+                    "Oh, thank you so much!",
+                    "I worked really hard on this website, so I'm glad you like it. Anyway, do you want me to show you places of interest?"
+                ],
                 ["Sure!", "No."],
                 5
             );
         }
         else if (section == 5) {
             makeChoice(
-                ["Sure!", "What kinds of things do you have?", "Actually, who ARE you?"],
-                ["Oh right, I forgot to introduce myself.", "The name's kyu(ren); Kyu, for short.", "I guess I do stuff. Like drawing, or programming."],
-                ["Nice to meet you!", "No, who ARE you?"],
+                [
+                    "Sure!",
+                    "What kinds of things do you have?",
+                    "Actually, who ARE you?"
+                ],
+                [
+                    "Oh right, I forgot to introduce myself.",
+                    "People generally call be by my title of the Bladewyrm, but you can call me Kyu.",
+                    "One of my biggest inspirations are video games, so I like making game-themed stuff."
+                ],
+                ["Nice to meet you!"],
                 6
             );
         }
         else if (section == 6) {
             makeChoice(
-                ["Nice to meet you, Kyu!", "You do seem pretty cool."],
-                ["Really? Thank you!", "Anyway, if you check out the projects link down there, you can see all the stuff I'm proud of.", "There's a lot of fun stuff in there—maybe you'll find something interesting?"],
+                [
+                    "Nice to meet you, Kyu!",
+                    "You are so cool."],
+                [
+                    "Ah, thank you!",
+                    "Anyway, you can navigate through this website using those buttons down there.",
+                    "Right now, we're just at the Home page.",
+                    "You can find most of my cool stuff under the Projects page."
+                ],
                 ["Thank you!"],
                 7
             );
@@ -187,14 +211,18 @@ $(document).ready(function() {
         else if (section == 7) {
             makeChoice(
                 ["Thank you!"],
-                ["Have fun!"],
+                ["Have fun and safe travels, stranger!"],
                 ["[Restart.]"],
                 0
             );
         }
         else if (section == 8) {
             makeChoice(
-                ["You made that? That's amazing!"],
+                [
+                    "WOAH!",
+                    "You made that?",
+                    "That's amazing!"
+                ],
                 ["Thank you so much! I have that and a lot more, actually!", "You wanna see?"],
                 ["Show me!", "No."],
                 9
@@ -202,8 +230,12 @@ $(document).ready(function() {
         }
         else if (section == 9) {
             makeChoice(
-                ["Really? Where can I find it?"],
-                [`If you follow the projects link down there, you'll see my stuff.`],
+                ["Oh? Sure!"],
+                [
+                    "Okay, so you can navigate through this website using those buttons down there.",
+                    "Right now, we're just at the Home page.",
+                    "You can find most of my cool stuff under the Projects page."
+                ],
                 ["Thank you!"],
                 10
             );
@@ -219,58 +251,77 @@ $(document).ready(function() {
         else if (section == 11) {
             makeChoice(
                 ["Thank you."],
-                ["No problem."],
+                ["No problem. I hope you feel better soon."],
                 ["[Restart.]"],
                 0
             );
         }
         else if (section == 12) {
             makeChoice(
-                ["That's so cool... Where can I find more?"],
-                ["Oh!", `If you wanna check out other cool stuff, check out the projects link down there!`],
-                ["Okay!"],
+                ["I am honored to be in your presence, o' great dragon."],
+                [
+                    "A-ah, you don't have to be so formal around me!",
+                    "I'm just a silly little guy trying to find their place in the world, really! B-but, um...",
+                    "You can navigate through this website using those buttons down there.",
+                    "Right now, we're just at the Home page.",
+                    "You can find most of my cool stuff under the Projects page."
+                ],
+                ["Thank you!"],
                 10
             );
         }
         else if (section == 13) {
             makeChoice(
-                ["Heh, just messing with you. Of course I want to see. Where can I find your stuff?"],
-                ["Well, if you follow the projects page down there, you can find them."],
-                ["Thank you."],
-                11
+                ["Yeah, just messing with you. Of course I want to see. Where can I find your stuff?"],
+                [
+                    "Heh, you really got me.",
+                    "(Man, why did I program that?)",
+                    "Anyway, you can navigate through this website using those buttons down there.",
+                    "Right now, we're just at the Home page.",
+                    "You can find most of my cool stuff under the Projects page."
+                ],
+                ["Thank you!"],
+                10
             );
         }
         else if (section == 14) {
             makeChoice(
-                ["Hold on. You did that?", "That's so cool! Do you have anything else?"],
-                ["Heh, I got quite a bit. I'm always cooking too, so I'll get more in time.", "Anyway, if you follow the projects link down there, you can see other cool stuff that I've made.", "I mean, even this website was all made by me. Cool, right?"],
-                ["You're amazing."],
-                15
+                ["Hold on. You did that?", "That's so cool!"],
+                [
+                    "O-oh! Yes I did, thank you!",
+                    "If you look around, I got some more too, if you're interested.",
+                    "You can navigate through this website using those buttons down there.",
+                    "Right now, we're just at the Home page.",
+                    "You can find most of my cool stuff under the Projects page."
+                ],
+                ["Thank you!"],
+                10
             );
-        }
-        else if (section == 15) {
-            makeChoice(
-                ["It really is, dude.", "Anyway, thank you so much! I'll go right ahead, if you don't mind."],
-                ["No problem! Have fun!"],
-                ["[Restart.]"],
-                0
-            );
-        }
+        };
     });
 
     $buttonOne.on("click", function() {
         if (section == 1) {
             makeChoice(
                 ["Heyas!"],
-                ["Oh?", "Hello there! Welcome to my silly little website!"],
+                [
+                    "Oh?",
+                    "Hello there! Welcome to my silly little website!"
+                ],
                 ["Thank you!", "I heard there were cool things going on?"],
                 2
             );
         }
         else if (section == 2) {
             makeChoice(
-                ["Thanks. I heard you were doing cool things in here?"],
-                ["Yo? Yeah, I do.", "I mean, what do you think of the cursor?", "Try clicking and dragging the cursor across the screen if you haven't yet."],
+                ["Thanks. I heard there is treasure hidden within this place."],
+                [
+                    "Oh, really? Treasure?",
+                    "(I'm surprised people call it treasure... Wow!)",
+                    "I mean, of course! what do you think of the cursor?",
+                    "Try clicking and dragging the cursor across the screen if you haven't yet.",
+                    "If you're on your phone, just try tapping the screen."
+                ],
                 ["That's amazing!", "It looks familiar..."],
                 8
             );
@@ -278,50 +329,53 @@ $(document).ready(function() {
         else if (section == 3) {
             makeChoice(
                 ["Hmm. I've been feeling down."],
-                ["Oh, I see. I'm sorry about that, stranger.", "I hope you feel better soon, though!", "With that, why don't you look around? Maybe something of mine will cheer you up."],
+                [
+                    "Oh, I see. I'm sorry about that, stranger.",
+                    "I hope you feel better soon, though!",
+                    "With that, why don't you stay a bit? Maybe something of mine will cheer you up.",
+                    "You can navigate through this website using those buttons down there.",
+                    "Right now, we're just at the Home page.",
+                    "You can find most of my cool stuff under the Projects page."
+                ],
                 ["Thank you."],
                 11
             );
         }
         else if (section == 4) {
             makeChoice(
-                ["...Hold on. Are you THE Kyu?"],
-                ["Oh! Yeah, that's me.", "The name's kyu(ren); Kyu for short.", "Anyway, what's up?"],
-                ["Amazing..."],
+                ["...Hold on. Are you THE Bladewyrm?"],
+                [
+                    "Oh! Yeah, that's me.",
+                    "Bladewyrm's just the title people know me as, but you can call me Kyu."
+                ],
+                ["(Give respect to the dragon)"],
                 12
             );
         }
-        else if (section == 5 || section == 9) {
+        else if (section == 5 || section == 9 || section == 13) {
             makeChoice(
                 ["...No."],
                 ["...Oh. Um. You're joking, right...?"],
-                ["Just messing with you.", "No."],
+                ["Yes.", "No."],
                 13
-            );
-        }
-        else if (section == 5) {
-            makeChoice(
-                ["You made all this? That's amazing..."],
-                ["Thank you!", "Yeah, I did all this for fun. You should thank my funny brain for that."],
-                ["You're so cool..."],
-                6
             );
         }
         else if (section == 8) {
             makeChoice(
-                ["It's nice.", "It almost looks...familiar."],
-                ["Oh, really?", "Yeah, I made it so it sorta resembles something important to me.", "I got more where that came from too, if you want to see."],
+                [
+                    "It's nice.",
+                    "It gives me a sort of nostalgic feeling, of something that I've lost."
+                ],
+                [
+                    "Oh? Yeah, I know that feeling. I know it very well.",
+                    "I made it in memory of something that was dear to me.",
+                    "(It still lives on... I'm glad.)",
+                    "(I won't ever let the world forget it existed. Times will change, and people—me included—will like new things.)",
+                    "(But that place... It meant so much to me. I feel like it's my duty to keep it alive.)"
+                ],
                 ["Wait, you did that?"],
                 14
             );
-        }
-        else if (section == 13) {
-            makeChoice(
-                ["...No."],
-                ["...Oh. Um. You're joking, right...?"],
-                ["Just messing with you.", "No."],
-                13
-            );
-        }
+        };
     });
 })
