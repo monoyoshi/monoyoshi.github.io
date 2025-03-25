@@ -141,7 +141,7 @@ $(document).ready(function() {
                 ["Yo."],
                 [
                     "Oh?",
-                    "Yo yo! Welcome to my humble little abode!"
+                    "Yo yo! Welcome to my silly little website!"
                 ],
                 ["Thank you!", "I heard there was treasure..."],
                 2
@@ -171,7 +171,7 @@ $(document).ready(function() {
                 ["Nothing in particular. Cool place though!"],
                 [
                     "Oh, thank you so much!",
-                    "I worked really hard on this website, so I'm glad you like it. Anyway, do you want me to show you places of interest?"
+                    "I worked really hard on this website, so I'm glad you like it. Anyway, do you want me to show you around?"
                 ],
                 ["Sure!", "No."],
                 5
@@ -186,7 +186,7 @@ $(document).ready(function() {
                 ],
                 [
                     "Oh right, I forgot to introduce myself.",
-                    "People generally call be by my title of the Bladewyrm, but you can call me Kyu.",
+                    "People generally know me by my status as the Bladewyrm, but you can call me Kyu.",
                     "One of my biggest inspirations are video games, so I like making game-themed stuff."
                 ],
                 ["Nice to meet you!"],
@@ -202,7 +202,7 @@ $(document).ready(function() {
                     "Ah, thank you!",
                     "Anyway, you can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
-                    "You can find most of my cool stuff under the Projects page."
+                    "You can find a gallery of my cool stuff under the Projects page."
                 ],
                 ["Thank you!"],
                 7
@@ -234,7 +234,7 @@ $(document).ready(function() {
                 [
                     "Okay, so you can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
-                    "You can find most of my cool stuff under the Projects page."
+                    "You can find a gallery of my cool stuff under the Projects page."
                 ],
                 ["Thank you!"],
                 10
@@ -260,11 +260,11 @@ $(document).ready(function() {
             makeChoice(
                 ["I am honored to be in your presence, o' great dragon."],
                 [
-                    "A-ah, you don't have to be so formal around me!",
-                    "I'm just a silly little guy trying to find their place in the world, really! B-but, um...",
+                    "Woah, hey! You don't have to be so formal around me.",
+                    "I'm just some guy that happens to be a dragon, really! B-but, um...",
                     "You can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
-                    "You can find most of my cool stuff under the Projects page."
+                    "You can find a gallery of my cool stuff under the Projects page."
                 ],
                 ["Thank you!"],
                 10
@@ -274,11 +274,11 @@ $(document).ready(function() {
             makeChoice(
                 ["Yeah, just messing with you. Of course I want to see. Where can I find your stuff?"],
                 [
-                    "Heh, you really got me.",
+                    "Heh, you really got me. You're funny.",
                     "(Man, why did I program that?)",
                     "Anyway, you can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
-                    "You can find most of my cool stuff under the Projects page."
+                    "You can find a gallery of my cool stuff under the Projects page."
                 ],
                 ["Thank you!"],
                 10
@@ -292,7 +292,7 @@ $(document).ready(function() {
                     "If you look around, I got some more too, if you're interested.",
                     "You can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
-                    "You can find most of my cool stuff under the Projects page."
+                    "You can find a gallery of my cool stuff under the Projects page."
                 ],
                 ["Thank you!"],
                 10
@@ -335,7 +335,7 @@ $(document).ready(function() {
                     "With that, why don't you stay a bit? Maybe something of mine will cheer you up.",
                     "You can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
-                    "You can find most of my cool stuff under the Projects page."
+                    "You can find a gallery of my cool stuff under the Projects page."
                 ],
                 ["Thank you."],
                 11
@@ -364,14 +364,12 @@ $(document).ready(function() {
             makeChoice(
                 [
                     "It's nice.",
-                    "It gives me a sort of nostalgic feeling, of something that I've lost."
+                    "It gives me a sort of nostalgic feeling."
                 ],
                 [
-                    "Oh? Yeah, I know that feeling. I know it very well.",
-                    "I made it in memory of something that was dear to me.",
-                    "(It still lives on... I'm glad.)",
-                    "(I won't ever let the world forget it existed. Times will change, and people—me included—will like new things.)",
-                    "(But that place... It meant so much to me. I feel like it's my duty to keep it alive.)"
+                    "Oh? Yeah, I know that feeling.",
+                    "I made it in memory of something that was very dear to me.",
+                    "(It still lives on... I'm glad.)"  
                 ],
                 ["Wait, you did that?"],
                 14

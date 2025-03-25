@@ -41,7 +41,7 @@
             footer();
 
             $("#age").text(ageCalc("07/30/2000") + 4000);
-            setInterval(() => $("#currenttime").text(`Current time: ${currentTime()}`), 1); // update every millisecond
+            setInterval(() => $(".currenttime").text(`${currentTime()}`), 1); // update every millisecond
         });
     </script>
 </head>
@@ -51,771 +51,147 @@
 
     <header></header>
 
-    <main class="container">
-        <div class="card">
-            <div class="header">profile</div>
+    <main class="mscontainer">
+        <div class="mscard">
+            <div class="msheader">profile</div>
 
-            <div class="content noactions">
-                <div class="row" style="margin: 10px 0;">
-                    <div class="column-40" style="text-align: center;">
-                        <img src="https://cdn.bladewyrm.dev/images/placeholder/junkun.png" width="75%" alt="self-portrait (real) (not clickbait (you can't even click on the picture))">
-                    </div>
-                    <div class="column-60" style="margin: 0 10px;">
-                        <br class="mobileshow">
-                        <div class="h2">Sword Enthusiast</div>
-                        <div class="h1">kyu(ren)</div>
-                        <div class="quote">"I'm like <s>the</s> joker but non-binary."</div>
-                        <p>
-                            Some guy who lives in the void. They are passionate in their interests, which include swords, dragons, dogs, tea-making, coffee-making, baking, and a certain type of anime character.<br>
-                        </p>
+            <div class="mscontent noactions">
+                <div class="widescreen mobilehide" style="height: 90px;"></div>
+                <div class="widescreen center">
+                    <div class="row">
+                        <div class="column-30"></div>
+                        <div class="column-20" style="text-align: center;">
+                            <img src="https://cdn.bladewyrm.dev/images/placeholder/kyutear.png" alt="self-portrait (real) (not clickbait (you can't even click on the picture))" style="width: 30vh;">
+                            <p class="darkmode">real pic of me</p>
+                        </div>
+                        <div class="column-5"></div>
+                        <div class="column-25">
+                            <br>
+                            <div>
+                                <div class="h3 darkmode">Sword Enthusiast</div>
+                                <div class="h1 darkmode">kyu(ren)</div>
+                                <div class="quote">"I'm like <s>the</s> joker but non-binary."</div>
+                                <p class="darkmode">
+                                    <br>
+                                    Some guy who lives in the void. They are passionate in their interests, which include swords, dragons, dogs, tea-making, coffee-making, baking, and a certain type of anime character.<br>
+                                </p>
+                            </div>
+                            <br class="medium">
+                            <div class="h2 darkmode">Profile</div>
+                            <br>
+                            <div>
+                                <table class="darkmode">
+                                    <tr>
+                                        <th>Aliases</th>
+                                        <td>
+                                            Kyu<br>
+                                            <a href="https://drocsi.bladewyrm.dev/ren.html" class="dul">Ren</a><br>
+                                            Pikahardt<br>
+                                            Marth<br>
+                                            Senpai<br>
+                                            Balls<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Species</th>
+                                        <td>Dragon(?)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Gender</th>
+                                        <td>??? / Gender unknown</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pronouns</th>
+                                        <td>
+                                            They/them<br>
+                                            He/him<br>
+                                            It/its<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Birthday</th>
+                                        <td>July 30, 2000 BC (Leo; age ~<span id="age">????</span>)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Residence</th>
+                                        <td>"The void"</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Timezone</th>
+                                            <td>
+                                                <span class="tooltip">
+                                                    Central Time (UTC-5/UTC-6)<br>
+                                                    <span class="mobileshow">
+                                                        <span class="currenttime">????/??/?? ??:??:?? UTC???</span>
+                                                    </span>
+                                                    <span class="ttpopup">
+                                                        Current time: <span class="currenttime">????/??/?? ??:??:?? UTC???</span>
+                                                    </span>
+                                                </span>
+                                                <br>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Likes</th>
+                                        <td>
+                                            Dragons<br>
+                                            Swords<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dislikes</th>
+                                        <td>
+                                            Snowy/icy winters<br>
+                                            Loud noises<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Favorite food</th>
+                                        <td>
+                                            Pasta<br>
+                                            Tea<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Hobbies</th>
+                                        <td>
+                                            Vibing<br>
+                                            Programming<br>
+                                            Gaming<br>
+                                            Drawing<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Special skills</th>
+                                        <td>
+                                            Being a funny, silly, goofy guy<br>
+                                            Hyperfixating<br>
+                                            <span class="mobileshow">
+                                                Making banana bread (Really, <a href="https://tou-cafe.bladewyrm.dev/bakyuri/banana-bread.html">it's good</a>!)<br>
+                                            </span>
+                                            <span class="mobilehide tooltip">
+                                                Making banana bread<span class="ttpopup">Really, <a href="https://tou-cafe.bladewyrm.dev/bakyuri/banana-bread.html">it's good</a>!</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column-15"></div>
-                    <div class="column-70">
-                        <div class="h1">Profile</div>
-                        <table>
-                            <tr>
-                                <th>Aliases</th>
-                                <td>
-                                    Kyu<br>
-                                    <a href="https://drocsi.bladewyrm.dev/ren.html">Ren</a><br>
-                                    Marth<br>
-                                    Pika(hardt)<br>
-                                    Senpai<br>
-                                    Balls<br>
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table>
-                            <tr>
-                                <th>Species</th>
-                                <td>Dragon(?)</td>
-                            </tr>
-                            <tr>
-                                <th>Gender</th>
-                                <td>??? / Gender unknown</td>
-                            </tr>
-                            <tr>
-                                <th>Pronouns</th>
-                                <td>
-                                    They/them<br>
-                                    He/him<br>
-                                    It/its<br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Birthday</th>
-                                <td>July 30, 2000 BC (Leo; age ~<span id="age">????</span>)</td>
-                            </tr>
-                            <tr>
-                                <th>Residence</th>
-                                <td>"The void"</td>
-                            </tr>
-                            <tr>
-                                <th>Timezone</th>
-                                <td>
-                                    <span class="tooltip">
-                                        Central Time (UTC-5/UTC-6)<span class="ttpopup" id="currenttime">Current time: ????/??/?? ??:??:?? UTC??</span>
-                                    </span>
-                                </td>
-                            </tr>
-                        </table>    
-                        <br>
-                        <table>
-                            <tr>
-                                <th>Likes</th>
-                                <td>
-                                    Dragons<br>
-                                    Swords<br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Dislikes</th>
-                                <td>
-                                    Snowy/icy winters<br>
-                                    Loud noises<br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Favorite food</th>
-                                <td>
-                                    Pasta<br>
-                                    Tea<br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Hobbies</th>
-                                <td>
-                                    Vibing<br>
-                                    Programming<br>
-                                    Gaming<br>
-                                    Drawing<br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>Special skills</th>
-                                <td>
-                                    Being a funny, silly, goofy guy<br>
-                                    Hyperfixation<br>
-                                    <span class="tooltip">
-                                        Making banana bread<span class="ttpopup">Really, <a href="https://tou-cafe.bladewyrm.dev/bakyuri/banana-bread.html">it's good</a>!</span>
-                                    </span>
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                    </div>
-                    <div class="column-15"></div>
-                </div>
+                <div class="widescreen mobilehide" style="height: 90px;"></div>
             </div>
-        </div>
-        <!-- this is for another day div class="flexbox">
-
-        <br class="big">
-
-        <div class="flexbox">
-            <div class="textbox" style="width: 50%;">
-                <div class="h1">Interests</div>
-                <div class="note">See also: <a>The Lists™</a></div>
-                <p>I like lots of stuff. Listed below are my current core hyperfixations.</p>
-                <ul>
-                    <li><b>Dragalia Lost</b></li>
-                    <li><b>Vtubing</b></li>
-                    <ul>
-                        <li><b>Original Characters</b></li>
-                        <li><b>Ren Zotto</b></li>
-                    </ul>
-                    <li><b>Pokémon</b></li>
-                    <li><b>Honkai: Star Rail</b></li>
-                    <li><b>Ensemble Stars!!</b></li>
-                    <li><b>Genshin Impact</b></li>
-                    <li><b>Fire Emblem</b></li>
-                    <li><b>Neko Atsume</b></li>
-                    <li><b>Taiko no Tatsujin</b></li>
-                </ul>
-            </div>
-            <div class="frame" style="width: 50%;">
-                <img src="https://cdn.bladewyrm.dev/images/placeholder/miku.png" alt="funny">
-            </div>
-        </div>
-
-        <br class="big">
-
-        <div class="textbox">
-            <div class="h1">Skills</div>
-            <div class="note">See also: <a href="projects.html">The Hyperfixation Corner</a></div>
-            <p>
-                These bars are based off on how I feel about a given subject. A bar that is more filled means that
-                I'm pretty confident when it comes to working with it. I most likely don't know <i>everything</i>,
-                but the projects page should provide some more solid proof that I am pretty good at doing stuff (I'm also
-                great at self-studying and searching things up)!
-            </p>
-
-            <br>
-
-            <div class="h2">Programs, Services, and Suites</div>
-            <hr>
-            <div class="h3">Google Workspace</div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Drive</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Gmail</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Meet</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Calendar</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Jamboard</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Docs</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Sheets</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Slides</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Forms</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Sites</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="h3">Microsoft 365</div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">OneDrive</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Outlook</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Teams</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 60%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>To Do</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Clipchamp</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 30%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Word</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Excel</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>PowerPoint</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Publisher</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 50%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>OneNote</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="h3">
-                <span class="tooltip">Adobe Creative Cloud
-                    <span class="ttpopup">
-                        Because I have no access to any of the programs listed below, I am extremely rusty
-                        with the programs themselves at the moment.
-                    </span>
-                </span>
-            </div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Illustrator</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>After Effects</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">InDesign</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Photoshop</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 50%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="h3">Other</div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Git</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>GitHub</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Glitch</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Heroku</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 40%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Zoom</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Audacity</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>GIMP</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Inkscape</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Open Broadcasting Software</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Blender</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 50%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <br class="medium">
-
-            <div class="h2">Programming Languages</div>
-            <hr>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">
-                            <span class="tooltip">
-                                JavaScript
-                                <span class="ttpopup">Familiar with Node.js and jQuery.</span>
-                            </span>
-                        </th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>HTML</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>CSS</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Python</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th><span class="tooltip">SQL<span class="ttpopup">Familiar with SQLite.</span></span></th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Java</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 60%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>C</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 40%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>PHP</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 10%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Scratch</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>MIT App Inventor</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>x86-64 Assembly</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 20%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <br class="medium">
-
-            <div class="h2">Spoken Languages</div>
-            <hr>
-            <div class="h3"><span class="tooltip">English<span class="ttpopup">My first language.</span></span></div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Reading</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Writing</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Listening</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Speaking</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="h3">
-                <span class="tooltip">Filipino
-                    <span class="ttpopup">Parents' native language.
-                    </span>
-                </span>
-            </div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Reading</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Writing</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 40%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Listening</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 100%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Speaking</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 30%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="h3">
-                <span class="tooltip">Japanese
-                    <span class="ttpopup">Studied throughout high school and college. Actually my major.</span>
-                </span>
-            </div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Reading</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 90%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Writing</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Listening</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 80%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Speaking</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 70%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="h3">
-                <span class="tooltip">Swedish
-                    <span class="ttpopup">
-                        Attributed to like, ~3 years of hyperfixation on Duolingo.<br>
-                        Most of the knowledge is gone now, but there are times the Swedish sleeper agent in me wakes
-                        up...
-                    </span>
-                </span>
-            </div>
-            <div class="flexbox">
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Reading</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 40%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Writing</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 20%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <table class="transparent" style="width: 100%;">
-                    <tr>
-                        <th style="width: 50%">Listening</th>
-                        <td style="width: 50%">
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 20%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Speaking</th>
-                        <td>
-                            <div class="progressbar">
-                                <div class="indicator" style="width: 10%"></div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div-->
     </main>
 
     <div id="asset_dust"></div>
+    <div id="viewport"></div>
 
     <footer></footer>
 </body>
