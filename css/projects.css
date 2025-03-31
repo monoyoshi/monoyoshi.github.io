@@ -1,0 +1,11 @@
+.kkdyimage {
+    width: 256px;
+}
+
+.noclicky {
+    pointer-events: none;;
+}
+
+#kokodayo {
+    min-height: 100%;
+}
