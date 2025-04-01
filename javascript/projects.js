@@ -19,7 +19,7 @@ const slides = {
             ]
         },
         {
-            "header": "TOU Café",
+            "header": "tou café",
             "quote": [true, `"i am shef (also my gf)"`],
             "buttons": [
                 true,
@@ -29,9 +29,9 @@ const slides = {
             ],
             "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/zodiloaf.png", "loaf"],
             "text": [
-                `Tired of seeing something that looks delicious, only to find out it was made with nuts? Do you ever want to just easily access recipes without all the flashy clutter? Well, look no further than TOU Café: a project that achieves that and more!<br>`,
+                `Tired of seeing something that looks delicious, only to find out it was made with nuts? Do you ever want to just easily access recipes without all the flashy clutter? Well, look no further than tou café (the lowercase makes it chill): a project that achieves that and more!<br>`,
                 `This project comes from the fact that my partner and I have a few Discord rooms dedicated to writing down recipes. You never know when Discord will go boom boom explosion emoji 💥, so I had the big brain idea of moving it all to a place that looks cool and is way easier to navigate. It's also more permanent because I have everything backed up.<br>`,
-                `Also, I really liked the franchise Touken Ranbu back then, so TOU Café reflects that a bit.<br>`
+                `Also, I was obsessed with the franchise Touken Ranbu/刀剣乱舞 back then, so tou café reflects that a bit.<br>`
             ]
         },
         {
