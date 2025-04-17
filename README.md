@@ -1,40 +1,38 @@
-# monoyoshi-github.io 🐉🧍‍♂️
+# monoyoshi-github.io 🐉🗡️
 
 ## 🔭 I’m currently working on ...
 
-Stuff. Lots of stuff.
+a bunch of random and seemingly unrelated stuff in a disorganized way. hello by the way 👋
 
-I'm cooking, but I'm using a slow cooker which I don't even think is turned on.
+that being said, it's mostly my silly little café mimic and recipe database website I called [tou café](https://tou-cafe.bladewyrm.dev).
 
 ## 🌱 I’m currently learning ...
 
-I think most of what I'm learning is how HTML, CSS, and Javascript all interact as one. I've been discovering that many things are possible if I just hyperfixate enough...
-
-## 💬 Ask me about ...
-
-Dragalia Lost.
+react.js (scary)
 
 ## 📫 How to reach me
 
-[@bladewyrm.dev](https://bsky.app/profile/bladewyrm.dev) on Bluesky.
-
-## 💻 PC Specs
-
-ahhh they/them, he/him, or it/its! thank you!
+[@bladewyrm.dev](https://bsky.app/profile/bladewyrm.dev) on bluesky
 
 ## 😄 Pronouns
 
 ~~Intel UHD Graphics 620 / Intel Core i7-8550U CPU / 16.0 GB RAM~~
 
-GeForce RTX 4070 Ti Super
+NVIDIA GeForce RTX 4070 Ti Super
 
 Intel Core i9-12900K CPU
 
 64.0 GB RAM
 
+## 💻 PC Specs
+
+ahhh they/them, he/him, or it/its! thank you!
+
 ## ⚡ Fun fact:
 
-I love Dragalia Lost.
+instead of a rubber duck, I debug with my ren zotto nui :)
+
+he's very helpful!
 
 <!--
 **monoyoshi/monoyoshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
