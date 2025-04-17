@@ -13,7 +13,7 @@ const slides = {
             "text": [
                 `Hey, congrats! You found the Hidden Treasure of Area 906! (I mean, I guess it's not really "hidden" per se...)<br>`,
                 `So basically, I do everything as a hobby. My special interests are what fuel and motivate me, so I primarily make things that excite the silly autistic brain of mine.<br>`,
-                `As a programmer, I specialize in web development— that is, creating static websites using vanilla HTML, CSS, and JavaScript (and the JQuery library through Google's CDN). I focus on these because of how easily accessible they are, and because I used to work on a laptop that would struggle hosting any kind of server (hence why I try not to run servers as much as possible. It's a part of my villain origin story). That being said, I do have experience with Node.js, and npm, and I'm currently figuring out how <a href="https://react.dev/" target="_blank" rel"="noopener noreferrer">React.js</a> works.<br>`,
+                `As a programmer, I specialize in web development— that is, creating static websites using vanilla HTML, CSS, and JavaScript (and the JQuery library through Google's CDN). I focus on these because of how easily accessible they are, and because I used to work on a laptop that would struggle hosting any kind of server. That being said, I do have experience with Node.js and npm, and I'm currently figuring out how <a href="https://react.dev/" target="_blank" rel"="noopener noreferrer">React.js</a> works.<br>`,
                 `As a graphic-design-leaning artist (hey, it really is my passion!), I enjoy making things that work very well when displayed on its own, whether it be as a small component for a bigger project or as a physical item like a shirt design. I use <a href="https://krita.org/" target="_blank" rel"="noopener noreferrer">Krita</a> for raster images and <a href="https://inkscape.org/" target="_blank" rel"="noopener noreferrer">Inkscape</a> for vector images.<br>`,
                 `<div style="text-align: center;"><img src="https://cdn.bladewyrm.dev/images/logo.svg" alt="fun" style="width: 256px;"></div>`
             ]
@@ -30,8 +30,7 @@ const slides = {
             "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/zodiloaf.png", "loaf"],
             "text": [
                 `Tired of seeing something that looks delicious, only to find out it was made with nuts? Do you ever want to just easily access recipes without all the flashy clutter? Well, look no further than tou café (the lowercase makes it chill): a project that achieves that and more!<br>`,
-                `This project comes from the fact that my partner and I have a few Discord rooms dedicated to writing down recipes. You never know when Discord will go boom boom explosion emoji 💥, so I had the big brain idea of moving it all to a place that looks cool and is way easier to navigate. It's also more permanent because I have everything backed up.<br>`,
-                `Also, I was obsessed with the franchise Touken Ranbu/刀剣乱舞 back then, so tou café reflects that a bit.<br>`
+                `This project comes from the fact that my partner and I have a few Discord rooms dedicated to writing down recipes. You never know when Discord will go boom boom explosion emoji 💥, so I had the big brain idea of moving it all to a place that looks cool and is way easier to navigate. It's also more permanent because I have everything backed up.<br>`
             ]
         },
         {
@@ -84,7 +83,7 @@ const slides = {
     ],
     "inactive": [
         {
-            "header": "bladewyrm906",
+            "header": "REN: ---------",
             "quote": [true, `"Remember Marth from the hit game Dragalia Lost? This is him now."`],
             "buttons": [
                 true,
@@ -94,9 +93,9 @@ const slides = {
             ],
             "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/drgl-5.png", "fun"],
             "text": [
-                `Originally known as Project DROCSI, this has been my passion project ever since Dragalia Lost announced the event Fire Emblem: Lost Heroes in April 2019. It stood for <b>DR</b>agalia Lost <b>O</b>riginal <b>C</b>haracter <b>S</b>elf <b>I</b>nsert (yeah yeah, it's goofy, but it stuck at the time). The character themselves prefer to go by the name REN.<br>`,
-                `Inspired by Marth Fire Emblem (and later on, Farren Dragalia Lost), REN is a character that represents most if not all of me. They're a monstrous fusion of both dragon and human who just wants to live on their own terms.<br>`,
-                `Coming soon (maybe)!<br>`
+                `This has been my passion project ever since Dragalia Lost released the event Fire Emblem: Lost Heroes in April 2019. I've always wanted to make a character that represents me, so REN is what I came up with after all this time.<br>`,
+                `Inspired by Marth Fire Emblem (and later on, Farren Dragalia Lost), REN is a monstrous fusion of both dragon and human who just wants to live on their own terms.<br>`,
+                `Coming soon!<br>`
             ]
         }
     ]
