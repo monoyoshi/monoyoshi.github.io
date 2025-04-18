@@ -186,8 +186,8 @@ $(document).ready(function() {
                 ],
                 [
                     "Oh right, I forgot to introduce myself.",
-                    "People generally know me by my status as the Bladewyrm, but you can call me Kyu.",
-                    "One of my biggest inspirations are video games, so I like making game-themed stuff."
+                    "People generally know me by my title as the Bladewyrm, but you can just call me Kyu.",
+                    "One of my biggest inspirations are video games, so I like making stuff themed around them."
                 ],
                 ["Nice to meet you!"],
                 6
@@ -260,9 +260,9 @@ $(document).ready(function() {
             makeChoice(
                 ["I am honored to be in your presence, o' great dragon."],
                 [
-                    "Woah, hey! You don't have to be so formal around me.",
-                    "I'm just some guy that happens to be a dragon, really! B-but, um...",
-                    "You can navigate through this website using those buttons down there.",
+                    "W-woah, hey! You don't have to be so formal around me...!",
+                    "I'm just some guy, really! S-so what if I'm a dragon, there's always...",
+                    "B-but, um... You can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
                     "You can find a gallery of my cool stuff under the Projects page."
                 ],
@@ -275,7 +275,7 @@ $(document).ready(function() {
                 ["Yeah, just messing with you. Of course I want to see. Where can I find your stuff?"],
                 [
                     "Heh, you really got me. You're funny.",
-                    "(Man, why did I program that?)",
+                    "(Man, why did I include an option like this?)",
                     "Anyway, you can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
                     "You can find a gallery of my cool stuff under the Projects page."
@@ -314,11 +314,11 @@ $(document).ready(function() {
         }
         else if (section == 2) {
             makeChoice(
-                ["Thanks. I heard there is treasure hidden within this place."],
+                ["Thanks. I heard there's treasure hidden somewhere within this place."],
                 [
                     "Oh, really? Treasure?",
                     "(I'm surprised people call it treasure... Wow!)",
-                    "I mean, of course! what do you think of the cursor?",
+                    "I-I mean, of course! what do you think of the cursor?",
                     "Try clicking and dragging the cursor across the screen if you haven't yet.",
                     "If you're on your phone, just try tapping the screen."
                 ],
@@ -332,7 +332,7 @@ $(document).ready(function() {
                 [
                     "Oh, I see. I'm sorry about that, stranger.",
                     "I hope you feel better soon, though!",
-                    "With that, why don't you stay a bit? Maybe something of mine will cheer you up.",
+                    "With that, why don't you chill for a bit? Maybe something of mine will cheer you up.",
                     "You can navigate through this website using those buttons down there.",
                     "Right now, we're just at the Home page.",
                     "You can find a gallery of my cool stuff under the Projects page."
@@ -367,9 +367,8 @@ $(document).ready(function() {
                     "It gives me a sort of nostalgic feeling."
                 ],
                 [
-                    "Oh? Yeah, I know that feeling.",
-                    "I made it in memory of something that was very dear to me.",
-                    "(It still lives on... I'm glad.)"  
+                    "Oh? I'm glad.",
+                    "I made it in memory of something that was very dear to me."
                 ],
                 ["Wait, you did that?"],
                 14
