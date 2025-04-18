@@ -104,26 +104,27 @@ const slides = {
 $(document).ready(function() {
     // variables
 
-    const $title = $("#kkdytitle");
-    const $main = $("#kkdymain");
-    const $quote = $("#kkdyquote");
-    const $buttons = $("#kkdybuttons");
-    const $text = $("#kkdytext");
-    const $side = $(".kkdyside");
-    const $image = $("#kkdyimage");
+    const $title = $("#kkdytitle"); // slide title
+    const $main = $("#kkdymain"); // slide main (like, structure)
+    const $quote = $("#kkdyquote"); // slide quote
+    const $buttons = $("#kkdybuttons"); // slide buttons
+    const $text = $("#kkdytext"); // slide text
+    const $side = $(".kkdyside"); // slide sidebar (the image)
+    const $image = $("#kkdyimage"); // slide image
 
-    const $larrow = $("#aleft");
-    const $rarrow = $("#aright");
+    const $larrow = $("#aleft"); // arrow button to go back
+    const $rarrow = $("#aright"); // arrow button to go forward
+
+    let cs = 0; // current slide
 
     // functions
-
-    let cs = 0;
-
+    // change slide
     function slideChange(d = 0) {
         let i = 0;
 
-        $title.html(slides.active[d].header);
+        $title.html(slides.active[d].header); // slide title
     
+        // slide image (if available)
         if (slides.active[d].image[0]) {
             $main.addClass("column-65");
             $main.removeClass("column-100");
@@ -136,13 +137,15 @@ $(document).ready(function() {
             $main.removeClass("column-65");
             $side.hide();
         };
-    
+
+        // slide quote (if available)
         if (slides.active[d].quote[0]) {
             $quote.html(slides.active[d].quote[1]);
             $quote.show();
         }
         else $quote.hide();
-    
+
+        // slide buttons (if available)
         if (slides.active[d].buttons[0]) {
             $buttons.empty();
             i = 0;
@@ -151,10 +154,10 @@ $(document).ready(function() {
                 $buttons
                     .append(
                         $("<a>", {
-                            "href": slides.active[d].buttons[1][i][0],
-                            "target": "_blank",
-                            "rel": "noopener noreferrer",
-                            "class": "button"
+                            href: slides.active[d].buttons[1][i][0],
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            class: "button"
                         })
                             .text(slides.active[d].buttons[1][i][1])
                     );
@@ -163,7 +166,8 @@ $(document).ready(function() {
             $buttons.show();
         }
         else $buttons.hide();
-    
+
+        // slide text
         $text.empty();
         i = 0;
         len = slides.active[d].text.length;
@@ -177,6 +181,7 @@ $(document).ready(function() {
         };
     };
 
+    // calculate slide to be on
     function slideCalc(back = false) {
         if (back) --cs;
         else ++cs;
@@ -195,6 +200,7 @@ $(document).ready(function() {
 
     slideChange(cs);
 
+    // left and right buttons to go through slides
     $larrow.on("click", function() {
         $larrow.toggleClass("noclicky");
         $rarrow.toggleClass("noclicky");
