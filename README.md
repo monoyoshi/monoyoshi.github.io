@@ -12,7 +12,7 @@ react.js (scary)
 
 ## 📫 How to reach me
 
-[@bladewyrm.dev](https://bsky.app/profile/bladewyrm.dev) on bluesky
+[@bladewyrm](https://twitter.com/bladewyrm) on twitter
 
 ## 😄 Pronouns
 
@@ -32,7 +32,7 @@ ahhh they/them, he/him, or it/its! thank you!
 
 instead of a rubber duck, I debug with my ren zotto nui :)
 
-he's very helpful!
+he's very helpful! I think he's seen the horrors though...
 
 <!--
 **monoyoshi/monoyoshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

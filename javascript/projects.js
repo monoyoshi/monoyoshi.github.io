@@ -2,7 +2,7 @@ const slides = {
     "active": [
         {
             "header": "Welcome to the Hyperfixation Corner",
-            "quote": [false, ""],
+            "quote": [false, ``],
             "buttons": [
                 false,
                 [
@@ -13,9 +13,9 @@ const slides = {
             "text": [
                 `Hey, congrats! You found the Hidden Treasure of Area 906! (I mean, I guess it's not really "hidden" per se...)<br>`,
                 `So basically, I do everything as a hobby. My special interests are what fuel and motivate me, so I primarily make things that excite the silly autistic brain of mine.<br>`,
-                `As a programmer, I specialize in web development— that is, creating static websites using vanilla HTML, CSS, and JavaScript (and the JQuery library through Google's CDN). I focus on these because of how easily accessible they are, and because I used to work on a laptop that would struggle hosting any kind of server. That being said, I do have experience with Node.js and npm, and I'm currently figuring out how <a href="https://react.dev/" target="_blank" rel"="noopener noreferrer">React.js</a> works.<br>`,
-                `As a graphic-design-leaning artist (hey, it really is my passion!), I enjoy making things that work very well when displayed on its own, whether it be as a small component for a bigger project or as a physical item like a shirt design. I use <a href="https://krita.org/" target="_blank" rel"="noopener noreferrer">Krita</a> for raster images and <a href="https://inkscape.org/" target="_blank" rel"="noopener noreferrer">Inkscape</a> for vector images.<br>`,
-                `<div style="text-align: center;"><img src="https://cdn.bladewyrm.dev/images/logo.svg" alt="fun" style="width: 256px;"></div>`
+                `As a programmer, I specialize in web development— that is, creating static websites using vanilla HTML, CSS, and JavaScript (and JQuery sometimes). I focus on these because of how easily accessible they are, and because I used to work on a laptop that would struggle hosting any kind of server. That being said, I'm currently having fun playing with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React.js</a> and <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a>.<br>`,
+                `As a graphic-design-leaning artist (hey, it really is my passion!), I enjoy making logos and graphics, whether it be as a small component for a bigger project or as a physical item like a shirt design. I use <a href="https://krita.org/" target="_blank" rel="noopener noreferrer">Krita</a> for raster images and <a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a> for vector images.<br>`,
+                `<div style="text-align: center;"><img src="https://cdn.bladewyrm.dev/images/logo.svg" alt="my logo :D" style="width: 256px;"></div>`
             ]
         },
         {
@@ -24,13 +24,30 @@ const slides = {
             "buttons": [
                 true,
                 [
-                    ["https://tou-cafe.bladewyrm.dev", "Main page"]
+                    ["https://toucafe.bladewyrm.dev", "Main page"]
                 ]
             ],
-            "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/zodiloaf.png", "loaf"],
+            "image": [true, "https://toucafe.bladewyrm.dev/logo.svg", "tou café logo"],
             "text": [
                 `Tired of seeing something that looks delicious, only to find out it was made with nuts? Do you ever want to just easily access recipes without all the flashy clutter? Well, look no further than tou café (the lowercase makes it chill): a project that achieves that and more!<br>`,
                 `This project comes from the fact that my partner and I have a few Discord rooms dedicated to writing down recipes. You never know when Discord will go boom boom explosion emoji 💥, so I had the big brain idea of moving it all to a place that looks cool and is way easier to navigate. It's also more permanent because I have everything backed up.<br>`
+            ]
+        },
+        {
+            "header": "REN: Artificial Blade",
+            "quote": [true, `"Remember Marth from the hit game Dragalia Lost? This is him now."`],
+            "buttons": [
+                false,
+                [
+                    ["https://artificialblade.bladewyrm.dev", "Main page"]
+                ]
+            ],
+            "image": [true, "https://artificialblade.bladewyrm.dev/logo.png", "ARTIFICIAL BLADE logo"],
+            "text": [
+                `The official site for ARTIFICIAL BLADE, the RPG-like VTuber persona by kyu(ren) @bladewyrm!`,
+                `This has been my passion project ever since Dragalia Lost released the event Fire Emblem: Lost Heroes in April 2019. I've always wanted to make a character that represents me, so this guy is what I came up with after all this time.`,
+                `Inspired by Marth Fire Emblem (and later on, Farren Dragalia Lost), REN is a monstrous fusion of both dragon and human who wants to have a café where humans and dragons can get along.`,
+                `Available now!`
             ]
         },
         {
@@ -50,7 +67,7 @@ const slides = {
         },
         {
             "header": "dragalia aesthetic page",
-            "quote": [true, `(on google) flying balls html`],
+            "quote": [true, `the effect where there's a ton of balls floating upwards`],
             "buttons": [
                 true,
                 [
@@ -58,10 +75,9 @@ const slides = {
                     ["https://github.com/monoyoshi/dusty", "GitHub repository"]
                 ]
             ],
-            "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/renzotto.png", "<3"],
+            "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/oyasumarth.png", "eepy....."],
             "text": [
-                `I wanted to make this one effect (the funny floating circles you see in the background here and in other pages), but then I kinda got off track and... well, here it is. If it wasn't obvious (given my main site), I really dig the Dragalia Lost aesthetic. The sparkly cursor thing also started from here.<br>`,
-                `There's even a user interface so you can change the effect yourself, I guess.<br>`
+                `I wanted to make this one effect (the funny floating circles you see in the background here and in other pages), but then I kinda got off track and... well, here it is. If it wasn't obvious (given what you see right now), I really dig the Dragalia Lost aesthetic. The sparkly cursor thing also started from here.<br>`
             ]
         },
         {
@@ -82,22 +98,6 @@ const slides = {
         }
     ],
     "inactive": [
-        {
-            "header": "REN: ---------",
-            "quote": [true, `"Remember Marth from the hit game Dragalia Lost? This is him now."`],
-            "buttons": [
-                true,
-                [
-                    ["https://vquber.bladewyrm.dev", "Main page"]
-                ]
-            ],
-            "image": [true, "https://cdn.bladewyrm.dev/images/placeholder/drgl-5.png", "fun"],
-            "text": [
-                `This has been my passion project ever since Dragalia Lost released the event Fire Emblem: Lost Heroes in April 2019. I've always wanted to make a character that represents me, so REN is what I came up with after all this time.<br>`,
-                `Inspired by Marth Fire Emblem (and later on, Farren Dragalia Lost), REN is a monstrous fusion of both dragon and human who just wants to live on their own terms.<br>`,
-                `Coming soon!<br>`
-            ]
-        }
     ]
 }
 
@@ -126,22 +126,29 @@ $(document).ready(function() {
     
         // slide image (if available)
         if (slides.active[d].image[0]) {
-            $main.addClass("column-65");
-            $main.removeClass("column-100");
+            $image
+                .attr("src", "")
+                .attr("alt", "");
+            $main
+                .addClass("column-65")
+                .removeClass("column-100");
             $side.show();
-            $image.attr("src", slides.active[d].image[1]);
-            $image.attr("alt", slides.active[d].image[2])
+            $image
+                .attr("src", slides.active[d].image[1])
+                .attr("alt", slides.active[d].image[2]);
         }
         else {
-            $main.addClass("column-100");
-            $main.removeClass("column-65");
+            $main
+                .addClass("column-100")
+                .removeClass("column-65");
             $side.hide();
         };
 
         // slide quote (if available)
         if (slides.active[d].quote[0]) {
-            $quote.html(slides.active[d].quote[1]);
-            $quote.show();
+            $quote
+                .html(slides.active[d].quote[1])
+                .show();
         }
         else $quote.hide();
 
