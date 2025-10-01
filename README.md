@@ -1,4 +1,4 @@
-# monoyoshi-github.io 🐉🗡️
+# monoyoshi.github.io 🐉🗡️
 
 hello! 👋
 
