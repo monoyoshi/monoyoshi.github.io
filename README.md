@@ -1,22 +1,26 @@
 # monoyoshi-github.io 🐉🗡️
 
+hello! 👋
+
+My name is Kyu and I am a hobbyist programmer/web developer and graphic designer. I like to work on personal projects on my free time. My favorite franchises are Dragalia Lost and Pokémon. Nice to meet you!
+
+[Main site](https://bladewyrm.dev)
+
 ## 🔭 I’m currently working on ...
 
-a bunch of random and seemingly unrelated stuff in a disorganized way. hello by the way 👋
+[tou café](https://tou-cafe.bladewyrm.dev) - A recipe database that mimics a café website.
 
-that being said, it's mostly my silly little café mimic and recipe database website I called [tou café](https://tou-cafe.bladewyrm.dev).
+[ARTIFICIAL BLADE](https://artificialblade.bladewyrm.dev) - An RPG-like VTuber project.
 
 ## 🌱 I’m currently learning ...
 
-react.js (scary)
+React.js and Next.js.
 
 ## 📫 How to reach me
 
-[@bladewyrm](https://twitter.com/bladewyrm) on twitter
+[@bladewyrm](https://twitter.com/bladewyrm) on Twitter
 
 ## 😄 Pronouns
-
-~~Intel UHD Graphics 620 / Intel Core i7-8550U CPU / 16.0 GB RAM~~
 
 NVIDIA GeForce RTX 4070 Ti Super
 
@@ -28,11 +32,9 @@ Intel Core i9-12900K CPU
 
 ahhh they/them, he/him, or it/its! thank you!
 
-## ⚡ Fun fact:
+## ⚡ Fun fact
 
-instead of a rubber duck, I debug with my ren zotto nui :)
-
-he's very helpful! I think he's seen the horrors though...
+I debug with a Ren Zotto nui instead of a rubber duck (I don't think I even have one). He's stationed in front of my main monitor and watches me as I go through the horrors of fighting with my code.
 
 <!--
 **monoyoshi/monoyoshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
