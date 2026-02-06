@@ -1,38 +1,46 @@
-# monoyoshi-github.io 🐉🗡️
+# monoyoshi.github.io 🐉🗡️
 
-## 🔭 I’m currently working on ...
+hello there!!!!
 
-a bunch of random and seemingly unrelated stuff in a disorganized way. hello by the way 👋
+the name's kyu and I am a hobbyist programmer/web developer and graphic designer. I like to work on personal projects on my free time, and my interests include pokémon, touken ranbu/刀剣乱舞, dragalia lost, and vtubers (ren zotto 😈🛸 and myself 🐉🗡️🧍‍♂️)! nice to meet you!!
 
-that being said, it's mostly my silly little café mimic and recipe database website I called [tou café](https://tou-cafe.bladewyrm.dev).
+as someone on the autism spectrum and (probably) adhd, I like to center what I do around my interests! fueled by messages of forging and cherishing bonds and my own personal experiences as a minority in more ways than one, I want to show the world what some guy like me can do. let's get lost, together!!!!
 
-## 🌱 I’m currently learning ...
+## 🔭 im currently working on ...
 
-react.js (scary)
+[The Dragon's Ground](https://tdsgtavern.bladewyrm.dev) - the official website of The Dragon's Ground, a fictional tavern set in the world of ARTIFICIAL BLADE. all recipes are curated by yours truly!
 
-## 📫 How to reach me
+[ARTIFICIAL BLADE](https://artificialblade.bladewyrm.dev) - an RPG-like VTuber project starring my original character and self-insert, the legendary Bladewyrm REN! coming, uh, eventually
 
-[@bladewyrm](https://twitter.com/bladewyrm) on twitter
+## 🌱 im currently learning ...
 
-## 😄 Pronouns
+react.js and next.js!
 
-~~Intel UHD Graphics 620 / Intel Core i7-8550U CPU / 16.0 GB RAM~~
+## 📫 how to reach me
 
-NVIDIA GeForce RTX 4070 Ti Super
+* [@bladewyrm](https://twitter.com/bladewyrm) on twitter
+* [@monoyoshi](https://github.com/monoyoshi) on github (as if you aren't there already)
+* [@bladewyrm](https://www.instagram.com/bladewyrm) on instagram
+* [@bladewyrm](https://ko-fi.com/bladewyrm) on ko-fi
+* [@bladewyrm.dev](https://bsky.app/profile/bladewyrm.dev) on bluesky
 
-Intel Core i9-12900K CPU
+## 😄 pronouns
 
-64.0 GB RAM
+nvidia geforce rtx 4070 ti super
 
-## 💻 PC Specs
+intel core i9-12900k cpu
+
+64.0 gb ram
+
+also I want a framework laptop in the future 🧍‍♂️
+
+## 💻 pc specs
 
 ahhh they/them, he/him, or it/its! thank you!
 
-## ⚡ Fun fact:
+## ⚡ fun fact
 
-instead of a rubber duck, I debug with my ren zotto nui :)
-
-he's very helpful! I think he's seen the horrors though...
+I debug with my ren zotto nui instead of a rubber duck (I don't think I even have one actually AHAHAHA)! he's stationed in front of my main monitor and watches me as I go through the horrors of fighting with my code :D
 
 <!--
 **monoyoshi/monoyoshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
