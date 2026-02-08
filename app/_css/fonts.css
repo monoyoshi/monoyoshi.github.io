@@ -1,0 +1,140 @@
+*,
+.rocknrollone,
+.rocknrollone *,
+footer * {
+    font-family: var(--font-rocknroll_one), sans-serif;
+}
+
+/* accent font: do hyeon */
+
+.dohyeon,
+.dohyeon *,
+a,
+a *,
+button,
+th,
+h1,
+h2,
+h3 {
+    font-family: var(--font-do_hyeon), sans-serif;
+}
+
+html {
+    font-style: normal;
+    color: var(--black);
+}
+
+@media only screen and not (max-width: 1279px) {
+    html {
+        font-size: 16px;
+    }
+
+    .dohyeon,
+    .dohyeon *,
+    a,
+    a *,
+    button,
+    th,
+    h1,
+    h2,
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    html {
+        font-size: 12px;
+    }
+
+    .dohyeon,
+    .dohyeon *,
+    a,
+    a *,
+    button,
+    th,
+    h1,
+    h2,
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* - - - - - - - - - */
+
+/* links */
+
+a {
+    color: inherit;
+    text-decoration: underline dotted;
+}
+
+a.camo {
+    text-decoration: none;
+}
+
+a:hover:active {
+    color: var(--a_blue);
+}
+
+::selection {
+    background-color: var(--a_blue_strong);
+    color: var(--white);
+}
+
+/* - - - - - - - - - */
+
+/* custom formatting */
+
+.h1,
+.h2,
+.h3 {
+    font-weight: bold;
+}
+
+h1,
+.h1 {
+    font-size: 2.25rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.75rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.325rem;
+}
+
+h1.rocknrollone,
+.h1.rocknrollone {
+    font-size: 2rem;
+}
+
+h2.rocknrollone,
+.h2.rocknrollone {
+    font-size: 1.5rem;
+}
+
+h3.rocknrollone,
+.h3.rocknrollone {
+    font-size: 1.125rem;
+}
+
+.textleft,
+.textleft * {
+    text-align: left;
+}
+
+.textcenter,
+.textcenter * {
+    text-align: center;
+}
+
+.textright,
+.textright * {
+    text-align: right;
+}
+
+/* - - - - - - - - - */

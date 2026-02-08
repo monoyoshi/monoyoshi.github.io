@@ -1,0 +1,225 @@
+/* homescreen visual */
+
+#background_container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-30deg, rgb(9, 144, 252) 0, rgb(135, 207, 234) 90%);
+}
+
+#horizon {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/home/horizon.png) repeat;
+    animation: horizon 99000ms linear infinite;
+}
+
+#clouds1,
+#clouds2,
+#clouds3 {
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#clouds2,
+#clouds3 {
+    animation: clouds linear infinite;
+}
+
+#clouds1 {
+    background: url(/home/backdrop_clouds.png) repeat;
+    animation: clouds1 72000ms linear infinite;
+}
+
+#clouds2 {
+    background: url(/home/clouds1.png) repeat;
+    animation-duration: 63000ms;
+}
+
+#clouds3 {
+    background: url(/home/clouds2.png) repeat;
+    animation-duration: 54000ms;
+}
+
+#foreground_container {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    background: repeat-x url(/home/grass.png);
+    animation: grass 900ms linear infinite;
+}
+
+#player {
+    bottom: 280px;
+    height: 256px;
+    width: 256px;
+}
+
+#kyu {
+    height: 256px;
+    width: 128px;
+    animation: kyu 857ms linear infinite;
+}
+
+#ren {
+    position: relative;
+    left: 160px;
+    height: 96px;
+    width: 96px;
+    animation: ren 1714ms linear infinite;
+}
+
+/* at least 1080p */
+@media only screen and not (max-width: 1079px) {
+}
+
+/* at least 720p */
+@media only screen and not (max-width: 719px) {
+    #player {
+        left: calc(50% - 256px);
+    }
+
+    #events_container,
+    #events_nav {
+        left: calc(50% - 320px);
+    }
+}
+
+/* smaller than 1080p */
+@media only screen and (max-width: 1079px) {
+}
+
+/* smaller than 720p */
+@media only screen and (max-width: 719px) {
+    #player {
+        left: calc(50% - 160px);
+    }
+
+    #events_container,
+    #events_nav {
+        left: calc(50% - 160px);
+    }
+}
+
+@keyframes horizon {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1920px 0;
+    }
+}
+
+@keyframes clouds1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1280px 0;
+    }
+}
+
+@keyframes clouds {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1920px 0;
+    }
+}
+
+@keyframes grass {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -128px 0;
+    }
+}
+
+@keyframes kyu {
+    0% {
+        background-image: url(/home/kyu1.png);
+    }
+    100% {
+        background-image: url(/home/kyu2.png);
+    }
+}
+
+@keyframes ren {
+    0% {
+        background-image: url(/home/ren1.png);
+        bottom: 264px;
+    }
+    50% {
+        bottom: 248px;
+    }
+    100% {
+        background-image: url(/home/ren2.png);
+        bottom: 264px;
+    }
+}
+
+/* --------- */
+
+/* events widget */
+
+#events {
+    position: fixed;
+    bottom: 128px;
+    height: 128px;
+}
+
+#events>* {
+    width: 320px;
+}
+
+#events .slideshow_content {
+    height: 100%;
+}
+
+#events .slideshow_content * {
+    height: 100%;
+    width: 100%;
+}
+
+#events .slideshow_current.forward,
+#events .slideshow_previous {
+    transform: translateX(-320px);
+}
+
+#events .slideshow_current.backward,
+#events .slideshow_next {
+    transform: translateX(320px);
+}
+
+#events .slideshow_next.forward,
+#events .slideshow_previous.backward {
+    transform: translateX(0);
+}
+
+/* at least 1080p */
+@media only screen and not (max-width: 1079px) {
+}
+
+/* at least 720p */
+@media only screen and not (max-width: 719px) {
+    #events {
+        transform: translateX(64px);
+    }
+}
+
+/* smaller than 1080p */
+@media only screen and (max-width: 1079px) {
+}
+
+/* smaller than 720p */
+@media only screen and (max-width: 719px) {
+    #events {
+        width: 100%;
+        left: calc(50% - 160px);
+    }
+}
+
+/* --------- */

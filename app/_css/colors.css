@@ -1,0 +1,21 @@
+:root {
+    --black: #090912;
+        --shadow: #0909124d;
+            --shadow_dark: #09091299;
+    --gray_ddd: #1b1b24;
+    --gray_dd: #3f3f48;
+    --gray_d: #5a5a63;
+    --gray: #7e7e87;
+    --gray_l: #9999a2;
+    --gray_ll: #bdbdc6;
+    --gray_lll: #d8d8e1;
+    --white: #f3f3fc;
+        --glow: #f3f3fc4d;
+
+
+    /* accent */
+    --a_blue: #3773b9;
+        --a_blue_strong: #51a2fc;
+    --a_gray: #414646;
+    --a_yellow: #eacf48;
+}
