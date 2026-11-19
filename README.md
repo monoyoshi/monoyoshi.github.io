@@ -1,21 +1,17 @@
 # monoyoshi.github.io 🐉🗡️
 
-hello there!!!!
+hello there!
 
-the name's kyu(ren) and I am a hobbyist programmer/web developer and graphic designer. I like to work on personal projects on my free time. my interests include pokémon, touken ranbu/刀剣乱舞, dragalia lost, and vtubers (ren zotto 😈🛸 and myself 🐉🗡️🧍‍♂️)! nice to meet you!!
+the name's kyu(ren) and im just a silly little guy (dragon) that programs and draws and bakes sometimes. nice to meet you!!
 
-as someone on the autism spectrum and (probably) adhd, I like to center what I do around my interests! fueled by messages of forging andcherishing bonds and my own personal experiences as a minority in more ways than one, I want to show the world what a silly little guy like me can do.
-
-let's get lost, together!!!!
+let's get lost, together!!!
 
 * [main site](https://bladewyrm.dev)
 * [github site](https://monoyoshi.github.io)
 
 ## 🔭 im currently working on ...
 
-[The Dragon's Ground](https://tdsgtavern.bladewyrm.dev) - the official website of The Dragon's Ground, a fictional tavern set in the world of ARTIFICIAL BLADE. all recipes are curated by yours truly!
-
-[ARTIFICIAL BLADE](https://artificialblade.bladewyrm.dev) - an RPG-like VTuber project starring my beloved original character and self-insert, the legendary Bladewyrm REN! coming uh . eventually
+[The Dragon's Ground](https://tdsgtavern.bladewyrm.dev) - the official website of The Dragon's Ground, a fictional tavern set in the world of ARTIFICIAL BLADE. a café business website at first glance, it's actually an online cookbook I use to keep track of all my recipes. everything is curated by yours truly!
 
 ## 🌱 im currently learning ...
 

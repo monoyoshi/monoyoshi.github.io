@@ -1,0 +1,47 @@
+/*
+
+fonts.css
+fonts
+
+*/
+
+/* main font: zen kaku gothic new */
+html, body,
+.zenkakugothicnew {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* accent font: yusei magic */
+h1, h2, h3, h4, h5, h6,
+.yuseimagic {
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* links */
+
+a {
+    color: var(--kyublue);
+    font-weight: 700;
+    text-decoration: underline dotted;
+}
+
+a:hover:active {
+    color: var(--kyuyellow);
+}
+
+/* - - - - - - - - - */
+
+/* lists */
+ul, ol {
+    padding-left: 2.5rem;
+}
+
+/* spacing */
+
+.br {
+    margin-bottom: 1rem;
+}

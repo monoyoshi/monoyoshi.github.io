@@ -1,23 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <base href="/">
 
-<head>
-    <base href="/">
+        <!-- metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device.height, initial-scale=1.0">
 
-    <!-- metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device.height, initial-scale=1.0">
+        <title>404 | monoyoshi.github.io</title>
+        <link rel="icon" type="image/png" href="favicon.png">
 
-    <title>monoyoshi.github.io</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <script>
-        window.location.replace("https://monoyoshi.github.io/");
-    </script>
-</head>
+        <!-- stylesheets -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 
-<body>
-    <p><i>"...and where do <b>you</b> think you're going?"</i></p>
-</body>
+        <style>
+            /* overall structure */
 
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html, body {
+                height: 100vh;
+                width: 100vw;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            /* - - - - - - - - - */
+
+            /* links */
+
+            a {
+                color: #3773b9;
+                font-weight: 700;
+                text-decoration: underline dotted;
+            }
+
+            a:hover:active {
+                color: #eacf48;
+            }
+
+            /* - - - - - - - - - */
+
+            /* body */
+
+            /* article */
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: #090912;
+                color: #f3f3fc;
+            }
+
+            /* footer */
+            footer {
+                position: fixed;
+                right: 8px;
+                bottom: 8px;
+                font-size: 12px;
+                opacity: 0.4;
+                user-select: none;
+                transition-duration: 250ms;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+                
+                > a {
+                    text-decoration: none;
+                    border: none;
+                }
+            }
+
+            /* - - - - - - - - - */
+        </style>
+    </head>
+    <body>
+        <article>
+            <p><i>...and where do <b>you</b> think you're going?</i></p>
+            <p style="margin-top: 16px;"><a href="https://monoyoshi.github.io/" title="home"><b><i>return to the main page.</i></b></a></p>
+        </article>
+
+        <footer>
+            <a href="https://bladewyrm.dev" target="_blank" rel="noopener noreferrer" title="my portfolio :)">🐉🗡️💙🩶</a>
+        </footer>
+    </body>
 </html>

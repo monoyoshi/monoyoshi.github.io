@@ -1,30 +1,40 @@
+/*
+
+main.css
+
+*/
+
 /* overall structure */
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 html, body {
     height: 100vh;
     width: 100vw;
-    font-family: "RocknRoll One", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
 }
 
 /* - - - - - - - - - */
 
+/* body */
+
+/* noscript notice */
+.noscript {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    font-size: 0.75rem;
+}
+
 /* article */
 article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
+    padding: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 /* footer */
@@ -32,16 +42,16 @@ footer {
     position: fixed;
     right: 8px;
     bottom: 8px;
-    font-size: 11px;
+    font-size: 12px;
     opacity: 0.4;
     user-select: none;
     transition-duration: 250ms;
-
     &:hover {
         opacity: 0.9;
     }
     
     > a {
         text-decoration: none;
+        border: none;
     }
 }

@@ -1,0 +1,17 @@
+/*
+
+color.css
+color variables
+
+*/
+
+:root {
+    /* general */
+    --black: #090912;
+    --white: #f3f3fc;
+
+    /* #mycolors */
+    --kyublue: #3773b9;
+    --kyugray: #646c7d;
+    --kyuyellow: #eacf48;
+}
